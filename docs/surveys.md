@@ -8,6 +8,8 @@ Curated list of survey papers, benchmark overviews, and meta-analyses that conte
 - Bulling, A., Blanke, U., Schiele, B. "A Tutorial on Human Activity Recognition Using Body-Worn Inertial Sensors." *ACM Computing Surveys*, 2014.
 - Li, X. et al. "A Systematic Survey on Deep Learning for Human Activity Recognition." *ACM Computing Surveys*, 2022.
 - Aviles-Cruz, C. et al. "Human Activity Recognition Using Deep Learning: A Review." *Applied Sciences*, 2023.
+- Yadav, S.K. et al. "A Review of Multimodal Human Activity Recognition with Special Emphasis on Classification, Applications, Challenges and Future Directions." *Knowledge-Based Systems*, 2024.
+- Mim, T.R. et al. "GAN-Based Data Augmentation for Human Activity Recognition: A Comprehensive Survey." *IEEE Access*, 2024.
 
 ## Video-based Action Recognition
 - Herath, S. et al. "Going Deeper into Action Recognition: A Survey." *Image and Vision Computing*, 2017.

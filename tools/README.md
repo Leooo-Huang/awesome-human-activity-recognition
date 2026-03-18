@@ -13,13 +13,17 @@ Utilities that keep the Awesome Human Activity Recognition list healthy. Scripts
   pwsh tools/validate_links.ps1
   ```
 
-## Catalog Builder (alpha)
-- `catalog_builder.py`  
-  Generates a machine-readable snapshot (JSON) of dataset metadata grouped by modality.
+## Catalog Builder
+- `catalog_builder.py`
+  Generates a machine-readable snapshot (JSON or CSV) of dataset metadata grouped by modality.
   ```powershell
+  # JSON output (default)
   python tools/catalog_builder.py --output data/catalog.json
+  # CSV output
+  python tools/catalog_builder.py --format csv --output data/catalog.csv
+  # Print summary of dataset counts
+  python tools/catalog_builder.py --summary
   ```
-  Current output is a modality -> datasets map with bullet metadata. Planned upgrades include schema validation and CSV/Markdown exports.
 
 ## Formatting Utilities
 - `normalize_ascii.py`  

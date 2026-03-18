@@ -3,18 +3,19 @@ Catalog Builder
 ---------------
 
 Parses dataset cards to produce machine-readable summaries (JSON/CSV).
-This scaffolding will be expanded in Q3 2024 to support automated stats,
-Shields badges, and documentation exports.
 
-Current capabilities:
+Capabilities:
 - Enumerates Markdown files under datasets/ grouped by modality.
-- Extracts front-matter style key-value pairs (future enhancement).
-- Prints a simple report (dataset count per modality).
+- Extracts key-value metadata from the bullet-list header in each card.
+- Outputs JSON or CSV format.
+- Prints a summary report of dataset counts per modality.
 """
 
 from __future__ import annotations
 
 import argparse
+import csv
+import io
 import json
 import re
 from collections import defaultdict
@@ -23,6 +24,7 @@ from typing import Dict, List
 
 DATASET_ROOT = Path(__file__).resolve().parents[1] / "datasets"
 MODALITIES = ["vision", "skeleton", "wearable", "multimodal", "emerging"]
+CSV_COLUMNS = ["modality", "title", "primary tasks", "scale", "license", "access"]
 
 
 def collect_dataset_files() -> Dict[str, List[Path]]:
@@ -73,17 +75,46 @@ def extract_metadata(markdown: Path) -> Dict[str, str]:
 def build_catalog() -> Dict[str, List[Dict[str, str]]]:
     catalog = {}
     for modality, files in collect_dataset_files().items():
-        catalog[modality] = [extract_metadata(md) for md in files]
+        entries = []
+        for md in files:
+            meta = extract_metadata(md)
+            meta["modality_group"] = modality
+            meta["file"] = str(md.relative_to(DATASET_ROOT.parent))
+            entries.append(meta)
+        catalog[modality] = entries
     return catalog
+
+
+def catalog_to_csv(catalog: Dict[str, List[Dict[str, str]]]) -> str:
+    buf = io.StringIO()
+    writer = csv.DictWriter(buf, fieldnames=CSV_COLUMNS, extrasaction="ignore")
+    writer.writeheader()
+    for modality, entries in catalog.items():
+        for entry in entries:
+            row = {col: entry.get(col, "") for col in CSV_COLUMNS}
+            row["modality"] = modality
+            writer.writerow(row)
+    return buf.getvalue()
+
+
+def print_summary(catalog: Dict[str, List[Dict[str, str]]]) -> None:
+    total = 0
+    print("\n--- Dataset Catalog Summary ---")
+    for modality in MODALITIES:
+        count = len(catalog.get(modality, []))
+        total += count
+        print(f"  {modality:<12} {count:>3} datasets")
+    print(f"  {'TOTAL':<12} {total:>3} datasets")
+    print()
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Generate dataset catalog exports.")
     parser.add_argument(
         "--format",
-        choices=["json"],
+        choices=["json", "csv"],
         default="json",
-        help="Output format. CSV/Markdown planned for future releases.",
+        help="Output format (default: json).",
     )
     parser.add_argument(
         "--output",
@@ -91,15 +122,28 @@ def main() -> None:
         default=None,
         help="Optional output path. Defaults to stdout.",
     )
+    parser.add_argument(
+        "--summary",
+        action="store_true",
+        help="Print a summary of dataset counts per modality.",
+    )
     args = parser.parse_args()
 
     catalog = build_catalog()
-    output = json.dumps(catalog, indent=2, sort_keys=True)
+
+    if args.format == "csv":
+        output = catalog_to_csv(catalog)
+    else:
+        output = json.dumps(catalog, indent=2, sort_keys=True, ensure_ascii=False)
 
     if args.output:
         args.output.write_text(output, encoding="utf-8")
+        print(f"Wrote {args.format.upper()} to {args.output}")
     else:
         print(output)
+
+    if args.summary:
+        print_summary(catalog)
 
 
 if __name__ == "__main__":

@@ -17,13 +17,15 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run lychee link checker
-        uses: lycheeverse/lychee-action@v1.9.0
+        uses: lycheeverse/lychee-action@v2
         with:
           args: >-
             --verbose
             --no-progress
             --accept 200,203,206,302,999
             --max-concurrency 8
+            --exclude-mail
+            --timeout 30
             **/*.md
           fail: true
 

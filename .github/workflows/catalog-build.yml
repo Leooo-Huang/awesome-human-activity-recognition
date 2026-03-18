@@ -1,0 +1,37 @@
+name: Build Catalog
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "datasets/**/*.md"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build JSON catalog
+        run: python tools/catalog_builder.py --format json --output data/catalog.json --summary
+
+      - name: Build CSV catalog
+        run: python tools/catalog_builder.py --format csv --output data/catalog.csv
+
+      - name: Commit catalog artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/catalog.json data/catalog.csv
+          git diff --cached --quiet || git commit -m "chore: auto-update catalog exports [skip ci]"
+          git push

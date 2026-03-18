@@ -15,9 +15,9 @@ Out of scope:
 
 ## Reporting a Vulnerability
 
-1. Email the maintainers at `security@human-activity-intel.org` (placeholder; update when operational).
-2. Include a detailed description, reproduction steps, and potential impact.
-3. Encrypt sensitive reports using the PGP key published in `docs/security-pgp.asc` (planned).
+1. Use [GitHub Security Advisories](https://github.com/Leo-Cyberautonomy/awesome-human-activity-recognition/security/advisories/new) to report vulnerabilities privately.
+2. Alternatively, email the maintainers at `wenxuan@cyberautonomy.dev` with a detailed description, reproduction steps, and potential impact.
+3. If you cannot use GitHub advisories, open a private issue or email.
 
 We will acknowledge receipt within 72 hours and provide an estimated remediation timeline. Please do not create public issues for security concerns.
 

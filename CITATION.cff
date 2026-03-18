@@ -5,8 +5,8 @@ type: dataset
 authors:
   - family-names: Huang
     given-names: Wenxuan
-repository-code: 'https://github.com/intelli-cave/awesome-human-activity-recognition'
-url: 'https://github.com/intelli-cave/awesome-human-activity-recognition'
+repository-code: 'https://github.com/Leo-Cyberautonomy/awesome-human-activity-recognition'
+url: 'https://github.com/Leo-Cyberautonomy/awesome-human-activity-recognition'
 abstract: >-
   A curated, living catalog of 40+ human activity recognition (HAR) and action recognition datasets 
   across vision-based (RGB/depth video), wearable sensors (IMU, smartwatch), skeleton/mocap, 
@@ -29,7 +29,7 @@ keywords:
   - deep learning
   - dataset catalog
   - machine learning
-license: MIT
-version: 0.1.0
-date-released: '2025-10-22'
+license: CC-BY-4.0
+version: 0.2.0
+date-released: '2026-03-19'
 
