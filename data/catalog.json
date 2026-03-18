@@ -1,0 +1,542 @@
+{
+  "emerging": [
+    {
+      "access": "[https://virtualhumans.mpi-inf.mpg.de/behave/](https://virtualhumans.mpi-inf.mpg.de/behave/)",
+      "file": "datasets/emerging/behave.md",
+      "license": "BEHAVE dataset license (research-only, attribution, no redistribution)",
+      "modality": "RGB-D video, 3D human poses, object meshes, interaction annotations",
+      "modality_group": "emerging",
+      "primary tasks": "Human-object interaction modeling, contact reasoning, human pose estimation",
+      "scale": "321 sequences, 20 participants, 10 object categories, 12 actions",
+      "title": "BEHAVE"
+    },
+    {
+      "access": "[https://ego-exo4d-data.org/](https://ego-exo4d-data.org/)",
+      "file": "datasets/emerging/ego-exo4d.md",
+      "license": "Research license (non-commercial); requires acceptance through dataset agreement",
+      "modality": "Synchronized egocentric and exocentric RGB video, audio, motion capture, text transcripts",
+      "modality_group": "emerging",
+      "primary tasks": "Cross-view action understanding, third-person to first-person translation, 4D reconstruction",
+      "scale": "1,422 sequences, 20+ hours ego video, 120+ hours exo video, 40 action categories",
+      "title": "Ego-Exo4D"
+    },
+    {
+      "access": "[https://github.com/aistairc/FineBio](https://github.com/aistairc/FineBio)",
+      "file": "datasets/emerging/finebio.md",
+      "license": "Research use only",
+      "modality": "Egocentric RGB video, eye gaze, hand pose, object annotations",
+      "modality_group": "emerging",
+      "primary tasks": "Fine-grained action recognition in biology lab settings, procedural activity understanding",
+      "scale": "32 subjects, ~7 hours of video, 12 biology experiments, multi-level annotations (coarse + fine-grained)",
+      "title": "FineBio"
+    },
+    {
+      "access": "[https://andytang15.github.io/FLAG3D/](https://andytang15.github.io/FLAG3D/)",
+      "file": "datasets/emerging/flag3d.md",
+      "license": "Research use only (non-commercial)",
+      "modality": "Multi-view RGB video, 3D skeleton (SMPL), language descriptions",
+      "modality_group": "emerging",
+      "primary tasks": "3D fitness activity understanding, action recognition, action quality assessment, motion generation",
+      "scale": "180,000+ sequences, 60 fitness action categories, 24 camera views per sequence",
+      "title": "FLAG3D"
+    },
+    {
+      "access": "[https://www.cse.ust.hk/haa/](https://www.cse.ust.hk/haa/)",
+      "file": "datasets/emerging/haa500.md",
+      "license": "Research use only",
+      "modality": "RGB video (web-sourced clips)",
+      "modality_group": "emerging",
+      "primary tasks": "Atomic action recognition, fine-grained action classification",
+      "scale": "10,000+ video clips, 500 atomic action classes",
+      "title": "HAA500"
+    },
+    {
+      "access": "[https://hoi4d.github.io/](https://hoi4d.github.io/)",
+      "file": "datasets/emerging/hoi4d.md",
+      "license": "Research use only",
+      "modality": "Egocentric RGB-D video, 3D hand pose, object 6DoF pose, point clouds",
+      "modality_group": "emerging",
+      "primary tasks": "Egocentric hand-object interaction understanding, action segmentation, 3D object reconstruction",
+      "scale": "4,000+ video clips, 800+ object instances, 16 categories, 610 indoor scenes, ~2.4M RGB-D frames",
+      "title": "HOI4D"
+    },
+    {
+      "access": "[https://github.com/EricGuo5513/HumanML3D](https://github.com/EricGuo5513/HumanML3D)",
+      "file": "datasets/emerging/humanml3d.md",
+      "license": "Research use only",
+      "modality": "3D human motion (SMPL joint positions and rotations) + natural language text descriptions",
+      "modality_group": "emerging",
+      "primary tasks": "Text-to-motion generation, motion-to-text retrieval, motion captioning",
+      "scale": "14,616 motion sequences, 44,970 text descriptions, ~28.6 hours of motion data",
+      "title": "HumanML3D"
+    },
+    {
+      "access": "[https://github.com/tr3e/InterHuman](https://github.com/tr3e/InterHuman)",
+      "file": "datasets/emerging/interhuman.md",
+      "license": "Research use only",
+      "modality": "3D human motion (two-person interactions) + natural language text descriptions",
+      "modality_group": "emerging",
+      "primary tasks": "Text-to-interaction motion generation, two-person motion synthesis",
+      "scale": "~7,779 two-person interaction motion sequences, ~23,337 text descriptions",
+      "title": "InterHuman"
+    },
+    {
+      "access": "[https://liangxuy.github.io/inter-x/](https://liangxuy.github.io/inter-x/)",
+      "file": "datasets/emerging/interx.md",
+      "license": "Research use only (non-commercial)",
+      "modality": "SMPL-X full-body motion capture (body, hands, face), text descriptions, interaction labels",
+      "modality_group": "emerging",
+      "primary tasks": "Human-human interaction generation, interactive motion prediction, text-to-interaction synthesis",
+      "scale": "11,000+ interaction sequences, 40+ interaction categories, paired SMPL-X parameters for two interacting persons",
+      "title": "InterX"
+    },
+    {
+      "access": "[https://caizhongang.github.io/projects/Motion-X/](https://caizhongang.github.io/projects/Motion-X/)",
+      "file": "datasets/emerging/motion-x.md",
+      "license": "Research license (non-commercial); request via dataset maintainers",
+      "modality": "Unified full-body motion capture with synchronized hands, face, audio, and inertial sensors",
+      "modality_group": "emerging",
+      "primary tasks": "Whole-body motion synthesis, human-object interaction, multi-actor coordination",
+      "scale": "10 subjects, 7 sensing modalities, 2 million frames, 330 motion categories",
+      "title": "Motion-X"
+    },
+    {
+      "access": "[https://motion-x-dataset.github.io/](https://motion-x-dataset.github.io/)",
+      "file": "datasets/emerging/motionx-plus.md",
+      "license": "Research use only (non-commercial); requires SMPL-X license",
+      "modality": "Whole-body motion capture (SMPL-X), text descriptions, facial expressions, hand poses",
+      "modality_group": "emerging",
+      "primary tasks": "Whole-body motion generation, text-to-motion synthesis, facial expression generation",
+      "scale": "120,900+ motion sequences, multi-granularity text labels (sequence-level and segment-level), covering diverse action categories",
+      "title": "Motion-X++"
+    },
+    {
+      "access": "Available through the official repository (see reference paper)",
+      "file": "datasets/emerging/wimans.md",
+      "license": "Research use",
+      "modality": "WiFi Channel State Information (CSI)",
+      "modality_group": "emerging",
+      "primary tasks": "Multi-user activity recognition, WiFi-based sensing, privacy-preserving HAR",
+      "scale": "Multi-user scenarios, multiple activity categories, varied spatial configurations",
+      "title": "WiMANS"
+    }
+  ],
+  "multimodal": [
+    {
+      "access": "[https://cs.stanford.edu/people/ranber/densevid/](https://cs.stanford.edu/people/ranber/densevid/)",
+      "file": "datasets/multimodal/activitynet-captions.md",
+      "license": "Research use only (ActivityNet terms)",
+      "modality": "RGB video (untrimmed YouTube videos) + natural language descriptions",
+      "modality_group": "multimodal",
+      "primary tasks": "Dense video captioning, temporal grounding, video paragraph retrieval",
+      "scale": "~20,000 videos, ~100,000 temporally localized captions, 849 hours",
+      "title": "ActivityNet Captions"
+    },
+    {
+      "access": "[https://allenai.org/plato/charades/](https://allenai.org/plato/charades/)",
+      "file": "datasets/multimodal/charades.md",
+      "license": "Creative Commons Attribution-NonCommercial 4.0",
+      "modality": "RGB video (crowdsourced indoor scenes), textual scripts, temporal annotations",
+      "modality_group": "multimodal",
+      "primary tasks": "Multi-label action recognition, temporal localization, video question answering",
+      "scale": "9,848 videos, 157 action classes, 66,500 temporal annotations",
+      "title": "Charades"
+    },
+    {
+      "access": "[https://ego4d-data.org/docs/data/](https://ego4d-data.org/docs/data/)",
+      "file": "datasets/multimodal/ego4d.md",
+      "license": "Ego4D data use agreement (non-commercial research, requires acceptance via CodaLab)",
+      "modality": "Egocentric RGB video (mono + stereo), audio, IMU, eye gaze, depth (subset)",
+      "modality_group": "multimodal",
+      "primary tasks": "Episodic memory, social interactions, audio-visual diarization, hand-object interaction, forecasting",
+      "scale": "3,000+ hours, 74 indoor/outdoor environments, 9 countries, 826 participants",
+      "title": "Ego4D"
+    },
+    {
+      "access": "[https://github.com/iSEE-Laboratory/EgoExo-Fitness](https://github.com/iSEE-Laboratory/EgoExo-Fitness)",
+      "file": "datasets/multimodal/egoexo-fitness.md",
+      "license": "Research use only (non-commercial)",
+      "modality": "Synchronized egocentric + exocentric RGB video, body pose (keypoints)",
+      "modality_group": "multimodal",
+      "primary tasks": "Action quality assessment, ego-exo action understanding, keypoint verification, natural language action commentary",
+      "scale": "31 hours of video, 1248 video sequences, 6000+ action instances",
+      "title": "EgoExo-Fitness"
+    },
+    {
+      "access": "[https://epic-kitchens.github.io/2021](https://epic-kitchens.github.io/2021)",
+      "file": "datasets/multimodal/epic-kitchens-100.md",
+      "license": "Non-commercial research license; requires agreement with EPIC-Kitchens consortium",
+      "modality": "Egocentric RGB video, multi-channel audio, narrative annotations",
+      "modality_group": "multimodal",
+      "primary tasks": "Action recognition (verb/noun/interaction), anticipation, detection, audio-visual learning",
+      "scale": "700+ hours, 100 kitchens, 45 million frames, 97 participants, 90 verb / 300 noun classes",
+      "title": "EPIC-Kitchens-100"
+    },
+    {
+      "access": "[https://how2sign.github.io/](https://how2sign.github.io/)",
+      "file": "datasets/multimodal/how2sign.md",
+      "license": "Research use only (requires agreement)",
+      "modality": "RGB video (multi-view), depth, 2D/3D body + hand + face pose, English audio, ASL gloss, English text",
+      "modality_group": "multimodal",
+      "primary tasks": "Sign language recognition, sign language translation, sign language production",
+      "scale": "~80 hours of ASL video, ~35,000 aligned sentence pairs, 11 signers",
+      "title": "How2Sign"
+    },
+    {
+      "access": "[https://rose1.ntu.edu.sg/dataset/actionRecognition/](https://rose1.ntu.edu.sg/dataset/actionRecognition/)",
+      "file": "datasets/multimodal/ntu-mutual.md",
+      "license": "Research use only (requires signed agreement via NTU)",
+      "modality": "RGB video, depth maps, 3D skeleton (25 joints per person), infrared",
+      "modality_group": "multimodal",
+      "primary tasks": "Two-person interaction recognition, mutual action recognition",
+      "scale": "26 mutual action classes, ~14,000 interaction samples (subset of NTU RGB+D 120)",
+      "title": "NTU RGB+D Mutual Actions"
+    }
+  ],
+  "skeleton": [
+    {
+      "access": "[https://amass.is.tue.mpg.de/](https://amass.is.tue.mpg.de/)",
+      "file": "datasets/skeleton/amass.md",
+      "license": "AMASS custom research license (non-commercial, attribution required)",
+      "modality": "Unified MoCap parameter sequences (SMPL/SMPL+H/DMPL parameters)",
+      "modality_group": "skeleton",
+      "primary tasks": "Motion synthesis, pose estimation, imitation learning, generative modeling",
+      "scale": "~16,000 minutes, 344 subjects, 40+ MoCap datasets merged",
+      "title": "AMASS"
+    },
+    {
+      "access": "[https://babel.is.tue.mpg.de/](https://babel.is.tue.mpg.de/)",
+      "file": "datasets/skeleton/babel.md",
+      "license": "BABEL research license (non-commercial, attribution)",
+      "modality": "Motion capture sequences with SMPL parameters, natural language labels, action segmentation",
+      "modality_group": "skeleton",
+      "primary tasks": "Motion-language alignment, action segmentation, motion synthesis, retrieval",
+      "scale": "43 hours of motion, 3.7k sequences, 250 action classes, dense textual annotations",
+      "title": "BABEL"
+    },
+    {
+      "access": "[http://vision.imar.ro/human3.6m/description.php](http://vision.imar.ro/human3.6m/description.php)",
+      "file": "datasets/skeleton/human36m.md",
+      "license": "Research-only; requires signed license agreement with the Human3.6M consortium",
+      "modality": "Optical motion capture (3D joint positions) + high-resolution RGB + depth + ground-truth camera calibration",
+      "modality_group": "skeleton",
+      "primary tasks": "3D human pose estimation, pose forecasting, mocap to image alignment",
+      "scale": "3.6 million 3D frames, 11 professional actors, 15 activity scenarios, 4 synchronized cameras",
+      "title": "Human3.6M"
+    },
+    {
+      "access": "[https://rose1.ntu.edu.sg/dataset/actionRecognition/](https://rose1.ntu.edu.sg/dataset/actionRecognition/)",
+      "file": "datasets/skeleton/ntu-rgbd-60.md",
+      "license": "Research use only (requires signed agreement)",
+      "modality": "RGB video, depth maps, 3D skeleton (25 joints), infrared",
+      "modality_group": "skeleton",
+      "primary tasks": "Skeleton-based action recognition, cross-subject and cross-view evaluation",
+      "scale": "56,880 video samples, 60 action classes, 40 subjects, 80 viewpoints",
+      "title": "NTU RGB+D 60"
+    },
+    {
+      "access": "[https://www.icst.pku.edu.cn/struct/Projects/PKUMMD.html](https://www.icst.pku.edu.cn/struct/Projects/PKUMMD.html)",
+      "file": "datasets/skeleton/pku-mmd.md",
+      "license": "Research use only (PKU terms)",
+      "modality": "RGB video, depth, infrared, 3D skeleton (25 joints)",
+      "modality_group": "skeleton",
+      "primary tasks": "Action detection, action recognition, skeleton-based activity understanding",
+      "scale": "~20,000 action instances, 51 action classes, 66 subjects, ~1,076 long video sequences",
+      "title": "PKU-MMD"
+    },
+    {
+      "access": "[https://github.com/skelemoa/quater-gcn](https://github.com/skelemoa/quater-gcn)",
+      "file": "datasets/skeleton/skeletics-152.md",
+      "license": "Research use only",
+      "modality": "2D/3D skeleton (estimated from RGB video)",
+      "modality_group": "skeleton",
+      "primary tasks": "Large-scale skeleton action recognition",
+      "scale": "~150,000 clips, 152 action classes",
+      "title": "Skeletics-152"
+    },
+    {
+      "access": "[http://totalcapture.net/](http://totalcapture.net/)",
+      "file": "datasets/skeleton/totalcapture.md",
+      "license": "Creative Commons Attribution 4.0 (non-commercial recommended)",
+      "modality": "Optical motion capture with synchronized multi-view RGB, depth, IMU",
+      "modality_group": "skeleton",
+      "primary tasks": "3D pose estimation, multi-view reconstruction, IMU-to-mocap fusion",
+      "scale": "5 subjects, 4 camera views, 4 Vicon cameras, 11 sequences per subject",
+      "title": "TotalCapture"
+    }
+  ],
+  "vision": [
+    {
+      "access": "[http://activity-net.org/](http://activity-net.org/)",
+      "file": "datasets/vision/activitynet.md",
+      "license": "Research use only (ActivityNet terms)",
+      "modality": "RGB video (untrimmed YouTube videos)",
+      "modality_group": "vision",
+      "primary tasks": "Activity recognition, temporal action detection, temporal action proposal generation",
+      "scale": "~20,000 untrimmed videos, 200 activity classes, ~648 hours",
+      "title": "ActivityNet"
+    },
+    {
+      "access": "[https://research.google.com/ava/](https://research.google.com/ava/)",
+      "file": "datasets/vision/ava.md",
+      "license": "Research use only (Google terms)",
+      "modality": "RGB video (movie clips)",
+      "modality_group": "vision",
+      "primary tasks": "Spatio-temporal action detection, action localization",
+      "scale": "430 15-minute movie clips, 80 atomic action classes, ~1.62M action labels, 57.6k video clips",
+      "title": "AVA (Atomic Visual Actions)"
+    },
+    {
+      "access": "[http://www.svcl.ucsd.edu/projects/resound/dataset.html](http://www.svcl.ucsd.edu/projects/resound/dataset.html)",
+      "file": "datasets/vision/diving48.md",
+      "license": "Research use only",
+      "modality": "RGB video",
+      "modality_group": "vision",
+      "primary tasks": "Fine-grained action recognition, temporal reasoning",
+      "scale": "~18,000 video clips, 48 diving action classes",
+      "title": "Diving48"
+    },
+    {
+      "access": "[https://sdolivia.github.io/FineGym/](https://sdolivia.github.io/FineGym/)",
+      "file": "datasets/vision/finegym.md",
+      "license": "Research-only; follows YouTube/host platform terms",
+      "modality": "RGB video (broadcast sports footage)",
+      "modality_group": "vision",
+      "primary tasks": "Fine-grained action recognition, temporal localization, event detection",
+      "scale": "32,000 video segments, 300 gymnastics events, multi-level annotations",
+      "title": "FineGym"
+    },
+    {
+      "access": "[https://github.com/PKU-ICST-MIPL/FineSports_CVPR2024](https://github.com/PKU-ICST-MIPL/FineSports_CVPR2024)",
+      "file": "datasets/vision/finesports.md",
+      "license": "Research use only",
+      "modality": "RGB video (NBA basketball broadcast footage)",
+      "modality_group": "vision",
+      "primary tasks": "Fine-grained multi-person action recognition, spatial-temporal action detection, hierarchical sports understanding",
+      "scale": "10,000 videos, 52 fine-grained action types, 123K bounding boxes",
+      "title": "FineSports"
+    },
+    {
+      "access": "[https://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/](https://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/)",
+      "file": "datasets/vision/hmdb51.md",
+      "license": "Research use only (Creative Commons Attribution 4.0 for annotations)",
+      "modality": "RGB video (movie clips, YouTube, web videos)",
+      "modality_group": "vision",
+      "primary tasks": "Action recognition",
+      "scale": "6,849 clips, 51 action classes",
+      "title": "HMDB-51"
+    },
+    {
+      "access": "[https://deepmind.com/research/open-source/kinetics](https://deepmind.com/research/open-source/kinetics)",
+      "file": "datasets/vision/kinetics-700.md",
+      "license": "Creative Commons Attribution 4.0 (via DeepMind terms)",
+      "modality": "RGB video (YouTube clips)",
+      "modality_group": "vision",
+      "primary tasks": "Large-scale action recognition, transfer learning, pretraining",
+      "scale": "~650k 10s clips, 700 action classes, 650k unique videos",
+      "title": "Kinetics-700"
+    },
+    {
+      "access": "[http://moments.csail.mit.edu/](http://moments.csail.mit.edu/)",
+      "file": "datasets/vision/moments-in-time.md",
+      "license": "Research use only (MIT terms)",
+      "modality": "RGB video (web-sourced clips)",
+      "modality_group": "vision",
+      "primary tasks": "Action/event recognition, temporal understanding",
+      "scale": "~1,000,000 labeled 3-second video clips, 339 classes",
+      "title": "Moments in Time"
+    },
+    {
+      "access": "[https://deeperaction.github.io/multisports/](https://deeperaction.github.io/multisports/)",
+      "file": "datasets/vision/multisports.md",
+      "license": "Research use only (non-commercial)",
+      "modality": "RGB video",
+      "modality_group": "vision",
+      "primary tasks": "Fine-grained spatio-temporal action detection in sports videos",
+      "scale": "3,200 video clips, 66 fine-grained sports action classes, 37,701 action instances, 902 video-level labels across 4 sports (basketball, volleyball, football, gymnastics)",
+      "title": "MultiSports"
+    },
+    {
+      "access": "[https://ai.stanford.edu/~syyeung/everymoment.html](https://ai.stanford.edu/~syyeung/everymoment.html)",
+      "file": "datasets/vision/multithumos.md",
+      "license": "Research use only (non-commercial)",
+      "modality": "RGB video (untrimmed sports videos)",
+      "modality_group": "vision",
+      "primary tasks": "Dense multi-label temporal action detection, temporal action segmentation",
+      "scale": "413 untrimmed videos, 65 action classes, 38,690 multi-label annotations, 30 hours of video",
+      "title": "MultiTHUMOS"
+    },
+    {
+      "access": "[http://rose1.ntu.edu.sg/datasets/actionrecognition.asp](http://rose1.ntu.edu.sg/datasets/actionrecognition.asp)",
+      "file": "datasets/vision/ntu-rgbd-120.md",
+      "license": "Research-only; requires signing usage agreement with NTU RGB+D team",
+      "modality": "RGB video, depth maps, 3D skeleton sequences (Microsoft Kinect V2)",
+      "modality_group": "vision",
+      "primary tasks": "3D action recognition, skeleton-based recognition, cross-view transfer",
+      "scale": "114,480 trimmed sequences, 120 action classes, 106 subjects, 32 setups",
+      "title": "NTU RGB+D 120"
+    },
+    {
+      "access": "[https://developer.qualcomm.com/software/ai-datasets/something-something](https://developer.qualcomm.com/software/ai-datasets/something-something)",
+      "file": "datasets/vision/something-something-v2.md",
+      "license": "Apache License 2.0",
+      "modality": "RGB video (crowdsourced, 2-6 seconds)",
+      "modality_group": "vision",
+      "primary tasks": "Fine-grained action recognition, temporal reasoning, few-shot transfer",
+      "scale": "220,847 video clips, 174 action templates, 338,000 textual descriptions",
+      "title": "Something-Something V2"
+    },
+    {
+      "access": "[https://project.inria.fr/toyotasmarthome/](https://project.inria.fr/toyotasmarthome/)",
+      "file": "datasets/vision/toyota-smarthome.md",
+      "license": "Research use only (Toyota terms, requires signed agreement)",
+      "modality": "RGB video, depth, 3D skeleton (multi-view)",
+      "modality_group": "vision",
+      "primary tasks": "Daily living activity recognition, cross-view action recognition",
+      "scale": "16,115 video clips, 31 activity classes, 18 subjects, 7 camera views",
+      "title": "Toyota Smarthome"
+    },
+    {
+      "access": "[https://www.crcv.ucf.edu/data/UCF101.php](https://www.crcv.ucf.edu/data/UCF101.php)",
+      "file": "datasets/vision/ucf101.md",
+      "license": "Research use only (UCF terms)",
+      "modality": "RGB video (YouTube clips)",
+      "modality_group": "vision",
+      "primary tasks": "Action recognition, temporal modeling",
+      "scale": "13,320 clips, 101 action classes, 27 hours of video",
+      "title": "UCF-101"
+    }
+  ],
+  "wearable": [
+    {
+      "access": "[https://github.com/OxWearables/capture24](https://github.com/OxWearables/capture24)",
+      "file": "datasets/wearable/capture24.md",
+      "license": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+      "modality": "Wrist-worn Axivity AX3 accelerometer (100 Hz) + wearable camera + sleep diary",
+      "modality_group": "wearable",
+      "primary tasks": "Free-living activity recognition, wearable HAR benchmarking, sedentary behavior analysis",
+      "scale": "151 participants, 3883 hours total (2562 annotated), 200+ activity labels mapped to Compendium of Physical Activities",
+      "title": "CAPTURE-24"
+    },
+    {
+      "access": "[https://archive.ics.uci.edu/ml/datasets/Daphnet+Freezing+of+Gait](https://archive.ics.uci.edu/ml/datasets/Daphnet+Freezing+of+Gait)",
+      "file": "datasets/wearable/daphnet.md",
+      "license": "Public domain (UCI Machine Learning Repository)",
+      "modality": "Wearable accelerometers (3 placements: ankle, thigh, trunk)",
+      "modality_group": "wearable",
+      "primary tasks": "Freezing of gait (FoG) detection in Parkinson's disease",
+      "scale": "10 Parkinson's patients, 8+ hours of walking data, binary labels (freeze / no-freeze)",
+      "title": "Daphnet Freezing of Gait"
+    },
+    {
+      "access": "[https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones](https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)",
+      "file": "datasets/wearable/hapt.md",
+      "license": "Creative Commons Attribution 4.0",
+      "modality": "Smartphone accelerometer + gyroscope",
+      "modality_group": "wearable",
+      "primary tasks": "Activity recognition, postural transition detection, transfer learning",
+      "scale": "30 participants, 12 activities, 6 postural transitions, 50 Hz sampling",
+      "title": "HAPT (Human Activities and Postural Transitions)"
+    },
+    {
+      "access": "[https://archive.ics.uci.edu/dataset/779/harth](https://archive.ics.uci.edu/dataset/779/harth)",
+      "file": "datasets/wearable/harth.md",
+      "license": "CC BY 4.0 — [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)",
+      "modality": "Accelerometer (dual-sensor: thigh and lower back)",
+      "modality_group": "wearable",
+      "primary tasks": "Free-living human activity recognition, sedentary behavior classification",
+      "scale": "22 subjects, ~5.5 hours of labeled data per subject, 12 activity classes, 50 Hz sampling rate",
+      "title": "HARTH (Human Activity Recognition Trondheim)"
+    },
+    {
+      "access": "[https://archive.ics.uci.edu/ml/datasets/MHEALTH+Dataset](https://archive.ics.uci.edu/ml/datasets/MHEALTH+Dataset)",
+      "file": "datasets/wearable/mhealth.md",
+      "license": "Public domain (UCI Machine Learning Repository)",
+      "modality": "IMU (accelerometer, gyroscope, magnetometer), ECG (electrocardiogram)",
+      "modality_group": "wearable",
+      "primary tasks": "Mobile health activity recognition, physiological monitoring",
+      "scale": "10 subjects, 12 activity classes, body-worn sensors at 3 placements",
+      "title": "mHealth"
+    },
+    {
+      "access": "[https://archive.ics.uci.edu/ml/datasets/OPPORTUNITY+Activity+Recognition](https://archive.ics.uci.edu/ml/datasets/OPPORTUNITY+Activity+Recognition)",
+      "file": "datasets/wearable/opportunity.md",
+      "license": "Creative Commons Attribution-NonCommercial 4.0",
+      "modality": "Wearable IMUs, body-worn accelerometers, ambient sensors, location beacons",
+      "modality_group": "wearable",
+      "primary tasks": "Context-aware activity recognition, sensor fusion, domain adaptation",
+      "scale": "4 participants, ~6 hours per subject, 72 sensor channels at 30-100 Hz",
+      "title": "OPPORTUNITY"
+    },
+    {
+      "access": "[https://archive.ics.uci.edu/ml/datasets/pamap2+physical+activity+monitoring](https://archive.ics.uci.edu/ml/datasets/pamap2+physical+activity+monitoring)",
+      "file": "datasets/wearable/pamap2.md",
+      "license": "Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0)",
+      "modality": "Wearable IMU (accelerometer, gyroscope, magnetometer) + heart rate monitor",
+      "modality_group": "wearable",
+      "primary tasks": "Daily activity recognition, wearable HAR benchmarking, transfer learning",
+      "scale": "9 subjects (8 train + 1 optional test), 18 labeled activities, 3 IMUs per subject, 100 Hz sampling",
+      "title": "PAMAP2"
+    },
+    {
+      "access": "[https://sensor.informatik.uni-mannheim.de/#dataset_realworld](https://sensor.informatik.uni-mannheim.de/#dataset_realworld)",
+      "file": "datasets/wearable/realworld-har.md",
+      "license": "Creative Commons Attribution 4.0",
+      "modality": "Smartphone and smartwatch accelerometer + gyroscope",
+      "modality_group": "wearable",
+      "primary tasks": "Human activity recognition in-the-wild, domain adaptation, sensor placement robustness",
+      "scale": "15 activities, 60 subjects, 3 body locations (hand, chest, ankle), 50 Hz sampling",
+      "title": "RealWorld HAR"
+    },
+    {
+      "access": "[http://www.shl-dataset.org/](http://www.shl-dataset.org/)",
+      "file": "datasets/wearable/shl.md",
+      "license": "Research use only (SHL terms)",
+      "modality": "Smartphone IMU (accelerometer, gyroscope, magnetometer, linear acceleration, gravity, orientation), barometer, GPS",
+      "modality_group": "wearable",
+      "primary tasks": "Locomotion mode recognition, transportation mode detection",
+      "scale": "3 users, 8 locomotion modes, 2,812 hours of labeled data over 7 months",
+      "title": "Sussex-Huawei Locomotion (SHL)"
+    },
+    {
+      "access": "[https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartphones](https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartphones)",
+      "file": "datasets/wearable/uci-har.md",
+      "license": "Public domain (UCI Machine Learning Repository)",
+      "modality": "Smartphone IMU (accelerometer + gyroscope)",
+      "modality_group": "wearable",
+      "primary tasks": "Human activity recognition from inertial sensors",
+      "scale": "30 subjects, 6 activity classes, 10,299 samples (2.56-second windows at 50 Hz)",
+      "title": "UCI-HAR"
+    },
+    {
+      "access": "[http://www.sal.disco.unimib.it/technologies/unimib-shar/](http://www.sal.disco.unimib.it/technologies/unimib-shar/)",
+      "file": "datasets/wearable/unimib-shar.md",
+      "license": "Research use only (University of Milano-Bicocca terms)",
+      "modality": "Smartphone accelerometer",
+      "modality_group": "wearable",
+      "primary tasks": "Activity recognition, fall detection",
+      "scale": "30 subjects, 17 activity classes (9 ADL + 8 falls), 11,771 samples",
+      "title": "UniMiB-SHAR"
+    },
+    {
+      "access": "[https://github.com/mariusbock/wear](https://github.com/mariusbock/wear)",
+      "file": "datasets/wearable/wear.md",
+      "license": "Creative Commons Attribution 4.0 (CC BY 4.0)",
+      "modality": "4x Bangle.js smartwatches (accelerometer + gyroscope, 50 Hz) + GoPro egocentric video",
+      "modality_group": "wearable",
+      "primary tasks": "Outdoor sports activity recognition, wearable HAR benchmarking, egocentric activity verification",
+      "scale": "22 participants, 18 workout activities, 11 outdoor locations, ~18 hours of data",
+      "title": "WEAR"
+    },
+    {
+      "access": "[https://www.cis.fordham.edu/wisdm/dataset.php](https://www.cis.fordham.edu/wisdm/dataset.php)",
+      "file": "datasets/wearable/wisdm.md",
+      "license": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+      "modality": "Smartphone accelerometer + gyroscope, smartwatch accelerometer",
+      "modality_group": "wearable",
+      "primary tasks": "Human activity recognition, gesture recognition, sensor fusion",
+      "scale": "51 subjects, 18 activities, 20 Hz sampling (v1); 75 subjects and 7 activities in WISDM v2",
+      "title": "WISDM (Wireless Sensor Data Mining)"
+    }
+  ]
+}
