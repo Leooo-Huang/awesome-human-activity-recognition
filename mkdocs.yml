@@ -1,0 +1,107 @@
+site_name: "Awesome Human Activity Recognition"
+site_url: "https://leo-cyberautonomy.github.io/awesome-human-activity-recognition/"
+repo_url: "https://github.com/Leo-Cyberautonomy/awesome-human-activity-recognition"
+repo_name: "Leo-Cyberautonomy/awesome-human-activity-recognition"
+
+docs_dir: "."
+site_dir: "site"
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: deep purple
+    accent: cyan
+  features:
+    - search.suggest
+    - search.highlight
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.tabs.link
+
+plugins:
+  - search
+
+nav:
+  - Home: docs/index.md
+  - Datasets:
+      - Vision:
+          - Kinetics-700: datasets/vision/kinetics-700.md
+          - UCF-101: datasets/vision/ucf101.md
+          - HMDB-51: datasets/vision/hmdb51.md
+          - ActivityNet: datasets/vision/activitynet.md
+          - AVA: datasets/vision/ava.md
+          - NTU RGB+D 120: datasets/vision/ntu-rgbd-120.md
+          - Something-Something V2: datasets/vision/something-something-v2.md
+          - FineGym: datasets/vision/finegym.md
+          - Moments in Time: datasets/vision/moments-in-time.md
+          - Diving48: datasets/vision/diving48.md
+          - Toyota Smarthome: datasets/vision/toyota-smarthome.md
+          - MultiSports: datasets/vision/multisports.md
+          - MultiTHUMOS: datasets/vision/multithumos.md
+          - FineSports: datasets/vision/finesports.md
+      - Skeleton:
+          - NTU RGB+D 60: datasets/skeleton/ntu-rgbd-60.md
+          - AMASS: datasets/skeleton/amass.md
+          - Human3.6M: datasets/skeleton/human36m.md
+          - BABEL: datasets/skeleton/babel.md
+          - TotalCapture: datasets/skeleton/totalcapture.md
+          - PKU-MMD: datasets/skeleton/pku-mmd.md
+          - Skeletics-152: datasets/skeleton/skeletics-152.md
+      - Wearable:
+          - UCI-HAR: datasets/wearable/uci-har.md
+          - PAMAP2: datasets/wearable/pamap2.md
+          - WISDM: datasets/wearable/wisdm.md
+          - OPPORTUNITY: datasets/wearable/opportunity.md
+          - HAPT: datasets/wearable/hapt.md
+          - RealWorld HAR: datasets/wearable/realworld-har.md
+          - mHealth: datasets/wearable/mhealth.md
+          - UniMiB-SHAR: datasets/wearable/unimib-shar.md
+          - Daphnet: datasets/wearable/daphnet.md
+          - Sussex-Huawei Locomotion: datasets/wearable/shl.md
+          - HARTH: datasets/wearable/harth.md
+          - CAPTURE-24: datasets/wearable/capture24.md
+          - WEAR: datasets/wearable/wear.md
+      - Multimodal:
+          - EPIC-Kitchens-100: datasets/multimodal/epic-kitchens-100.md
+          - Ego4D: datasets/multimodal/ego4d.md
+          - Charades: datasets/multimodal/charades.md
+          - NTU Mutual Actions: datasets/multimodal/ntu-mutual.md
+          - ActivityNet Captions: datasets/multimodal/activitynet-captions.md
+          - How2Sign: datasets/multimodal/how2sign.md
+          - EgoExo-Fitness: datasets/multimodal/egoexo-fitness.md
+      - Emerging:
+          - BEHAVE: datasets/emerging/behave.md
+          - Motion-X: datasets/emerging/motion-x.md
+          - Ego-Exo4D: datasets/emerging/ego-exo4d.md
+          - HumanML3D: datasets/emerging/humanml3d.md
+          - InterHuman: datasets/emerging/interhuman.md
+          - HOI4D: datasets/emerging/hoi4d.md
+          - FineBio: datasets/emerging/finebio.md
+          - HAA500: datasets/emerging/haa500.md
+          - "Motion-X++": datasets/emerging/motionx-plus.md
+          - FLAG3D: datasets/emerging/flag3d.md
+          - InterX: datasets/emerging/interx.md
+          - WiMANS: datasets/emerging/wimans.md
+  - Resources:
+      - Taxonomy: docs/taxonomy.md
+      - Surveys: docs/surveys.md
+      - Benchmarking: docs/benchmarking.md
+  - Contributing: CONTRIBUTING.md
+  - Roadmap: docs/roadmap.md
+
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true

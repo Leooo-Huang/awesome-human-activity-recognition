@@ -1,0 +1,39 @@
+name: SOTA Snapshot Update
+
+on:
+  schedule:
+    # Every Wednesday at 06:00 UTC
+    - cron: "0 6 * * 3"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-sota:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run SOTA updater
+        run: python tools/sota_updater.py
+
+      - name: Commit updated snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/sota-snapshot.json
+          # Only commit if there are actual changes
+          git diff --cached --quiet && echo "No changes to commit" || \
+            git commit -m "chore: update SOTA snapshot $(date -u +%Y-%m-%d)"
+          git push

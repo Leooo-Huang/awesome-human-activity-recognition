@@ -1,15 +1,23 @@
 # Awesome Human Activity Recognition [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+<p align="center">
+  <a href="https://github.com/Leo-Cyberautonomy/awesome-human-activity-recognition">
+    <img src="assets/banner.svg" alt="Awesome Human Activity Recognition" width="600">
+  </a>
+</p>
+
 > A curated, researcher-driven guide to **Human Activity Recognition** — 53 datasets, key frameworks, pretrained models, tutorials, and benchmark tools across vision, wearable, skeleton, and multimodal modalities.
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Leo-Cyberautonomy/awesome-human-activity-recognition/pulls)
 [![Last Updated](https://img.shields.io/badge/Updated-March_2026-blue.svg)](#)
+[![Website](https://img.shields.io/badge/Website-GitHub_Pages-blue.svg)](https://leo-cyberautonomy.github.io/awesome-human-activity-recognition/)
 
 **[中文](i18n/README.zh.md)** | [Deutsch](i18n/README.de.md) | [Español](i18n/README.es.md) | [Français](i18n/README.fr.md) | [日本語](i18n/README.ja.md) | [한국어](i18n/README.ko.md) | [Português](i18n/README.pt.md) | [Русский](i18n/README.ru.md)
 
 ## Contents
 
+- [Repository Architecture](#repository-architecture)
 - [Which Dataset Should I Use](#which-dataset-should-i-use)
 - [Datasets](#datasets)
 - [Frameworks and Libraries](#frameworks-and-libraries)
@@ -19,6 +27,38 @@
 - [Competitions and Challenges](#competitions-and-challenges)
 - [Tools and Utilities](#tools-and-utilities)
 - [Related Awesome Lists](#related-awesome-lists)
+
+## Repository Architecture
+
+```mermaid
+graph LR
+    subgraph Datasets["53 Datasets"]
+        V["Vision (14)"]
+        S["Skeleton (7)"]
+        W["Wearable (13)"]
+        M["Multimodal (7)"]
+        E["Emerging (12)"]
+    end
+
+    subgraph Ecosystem
+        F["Frameworks & Libraries"]
+        P["Pretrained Models"]
+        T["Tutorials & Courses"]
+    end
+
+    subgraph Automation
+        LC["Link Check\n(weekly)"]
+        SU["SOTA Update\n(weekly)"]
+        CB["Catalog Build\n(on push)"]
+    end
+
+    Datasets --> F
+    Datasets --> P
+    F --> T
+    SU -->|updates| Datasets
+    LC -->|validates| Datasets
+    CB -->|exports| JSON["catalog.json\ncatalog.csv"]
+```
 
 ## Which Dataset Should I Use
 

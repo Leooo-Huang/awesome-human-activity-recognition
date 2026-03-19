@@ -1,0 +1,25 @@
+{
+  "updated_at": "2026-03-19T00:00:00Z",
+  "tasks": {
+    "action-recognition-in-videos": {
+      "task_name": "Action Recognition in Videos",
+      "description": "",
+      "top_results": []
+    },
+    "skeleton-based-action-recognition": {
+      "task_name": "Skeleton-Based Action Recognition",
+      "description": "",
+      "top_results": []
+    },
+    "activity-recognition": {
+      "task_name": "Activity Recognition",
+      "description": "",
+      "top_results": []
+    },
+    "human-pose-estimation": {
+      "task_name": "Human Pose Estimation",
+      "description": "",
+      "top_results": []
+    }
+  }
+}
