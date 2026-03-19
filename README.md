@@ -1,20 +1,44 @@
 # Awesome Human Activity Recognition [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated list of 53 Human Activity Recognition (HAR), action recognition, motion capture, and pose estimation datasets — with licensing, benchmarks, SOTA leaderboards, and download instructions.
+> A curated, researcher-driven guide to **Human Activity Recognition** — 53 datasets, key frameworks, pretrained models, tutorials, and benchmark tools across vision, wearable, skeleton, and multimodal modalities.
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Leo-Cyberautonomy/awesome-human-activity-recognition/pulls)
+[![Last Updated](https://img.shields.io/badge/Updated-March_2026-blue.svg)](#)
 
 **[中文](i18n/README.zh.md)** | [Deutsch](i18n/README.de.md) | [Español](i18n/README.es.md) | [Français](i18n/README.fr.md) | [日本語](i18n/README.ja.md) | [한국어](i18n/README.ko.md) | [Português](i18n/README.pt.md) | [Русский](i18n/README.ru.md)
 
 ## Contents
 
-- [Vision (RGB / Depth)](#vision-rgb--depth)
-- [Skeleton and Mocap](#skeleton-and-mocap)
-- [Wearable Sensors](#wearable-sensors)
-- [Multimodal and Egocentric](#multimodal-and-egocentric)
-- [Emerging and Frontier](#emerging-and-frontier)
+- [Which Dataset Should I Use](#which-dataset-should-i-use)
+- [Datasets](#datasets)
+- [Frameworks and Libraries](#frameworks-and-libraries)
+- [Pretrained Models](#pretrained-models)
+- [Tutorials and Courses](#tutorials-and-courses)
+- [Key Papers](#key-papers)
+- [Competitions and Challenges](#competitions-and-challenges)
+- [Tools and Utilities](#tools-and-utilities)
+- [Related Awesome Lists](#related-awesome-lists)
 
-## Vision (RGB / Depth)
+## Which Dataset Should I Use
+
+> Pick your modality and task, then follow the recommendation to the right section.
+
+**I have video and want to classify actions** — Start with Kinetics-700 for pretraining, evaluate on UCF-101 or HMDB-51 for comparison with prior work. See [Vision](#vision-rgb--depth).
+
+**I need temporal action detection in untrimmed video** — ActivityNet for proposals, AVA for spatio-temporal, MultiTHUMOS for dense multi-label. Also listed under Vision above.
+
+**I work with skeleton or motion capture data** — NTU RGB+D 120 is the de facto standard. For text-motion alignment, use Babel or HumanML3D. See [Skeleton](#skeleton-and-mocap) and [Emerging](#emerging-and-frontier).
+
+**I have IMU or wearable sensor data** — UCI-HAR for baselines, PAMAP2 for multi-sensor, CAPTURE-24 for real-world scale (151 subjects, 3883 hours). See [Wearable](#wearable-sensors).
+
+**I need egocentric or multimodal data** — Ego4D for scale (3.3k hours), EPIC-Kitchens-100 for kitchen actions, Ego-Exo4D for cross-view (NEW, CVPR 2024). See [Multimodal](#multimodal-and-egocentric).
+
+**I want text-to-motion generation** — HumanML3D for single-person, InterHuman for two-person, Motion-X++ for whole-body with face and hands. Also listed under Emerging above.
+
+## Datasets
+
+### Vision (RGB / Depth)
 
 - [Kinetics-700](https://deepmind.com/research/open-source/kinetics) - Large-scale pretraining benchmark with 650k YouTube clips across 700 action classes.
 - [UCF-101](https://www.crcv.ucf.edu/data/UCF101.php) - Classic action recognition benchmark with 13.3k clips across 101 classes.
@@ -31,7 +55,7 @@
 - [MultiTHUMOS](https://ai.stanford.edu/~syyeung/everymoment.html) - Dense multi-label temporal action detection with 65 classes and 38k annotations.
 - [FineSports](https://github.com/PKU-ICST-MIPL/FineSports_CVPR2024) - Multi-person fine-grained sports understanding with 10k NBA videos and 52 action types from CVPR 2024.
 
-## Skeleton and Mocap
+### Skeleton and Mocap
 
 - [NTU RGB+D 60](https://rose1.ntu.edu.sg/dataset/actionRecognition/) - Foundation dataset for skeleton-based action recognition with 57k sequences across 60 classes.
 - [AMASS](https://amass.is.tue.mpg.de/) - Unified SMPL motion capture parameters from 40+ datasets covering 16k minutes and 344 subjects.
@@ -41,7 +65,7 @@
 - [PKU-MMD](https://www.icst.pku.edu.cn/struct/Projects/PKUMMD.html) - Multi-modality action detection benchmark with 20k instances across 51 classes.
 - [Skeletics-152](https://github.com/skelemoa/quater-gcn) - Large-scale skeleton action recognition from estimated poses with 150k clips across 152 classes.
 
-## Wearable Sensors
+### Wearable Sensors
 
 - [UCI-HAR](https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartphones) - Classic smartphone IMU benchmark with 30 subjects and 6 activities, near-saturated.
 - [PAMAP2](https://archive.ics.uci.edu/ml/datasets/pamap2+physical+activity+monitoring) - Wearable HAR standard with multi-IMU and heart rate from 9 subjects across 18 activities.
@@ -57,7 +81,7 @@
 - [CAPTURE-24](https://github.com/OxWearables/capture24) - Largest free-living wrist accelerometer dataset with 151 subjects and 3883 hours from Nature Scientific Data 2024.
 - [WEAR](https://github.com/mariusbock/wear) - Outdoor sports dataset with smartwatch IMU and egocentric video from 22 subjects across 18 activities, published at IMWUT 2024.
 
-## Multimodal and Egocentric
+### Multimodal and Egocentric
 
 - [EPIC-Kitchens-100](https://epic-kitchens.github.io/2021) - Long-term egocentric kitchen actions with audio spanning 700 hours across 90 kitchens.
 - [Ego4D](https://ego4d-data.org/docs/data/) - Largest egocentric dataset with multi-task benchmarks spanning 3.3k hours across 74 scenes.
@@ -67,7 +91,7 @@
 - [How2Sign](https://how2sign.github.io/) - Multimodal American Sign Language dataset with RGB, depth, and pose spanning 80 hours.
 - [EgoExo-Fitness](https://github.com/iSEE-Laboratory/EgoExo-Fitness) - Ego and exo fitness action quality assessment with 31 hours and 6k+ actions from ECCV 2024.
 
-## Emerging and Frontier
+### Emerging and Frontier
 
 - [BEHAVE](https://virtualhumans.mpi-inf.mpg.de/behave/) - RGB-D human-object interaction with 3D pose spanning 321 sequences from 20 subjects.
 - [Motion-X](https://caizhongang.github.io/projects/Motion-X/) - Full-body and hand joint motion from multisensor mocap with 2M frames from 10 subjects.
@@ -82,9 +106,125 @@
 - [InterX](https://liangxuy.github.io/inter-x/) - Comprehensive human-human interaction dataset with SMPL-X spanning 11k+ sequences from CVPR 2024.
 - [WiMANS](https://arxiv.org/abs/2402.09430) - First WiFi-based multi-user activity sensing benchmark at a top venue from ECCV 2024.
 
+## Frameworks and Libraries
+
+### Video Action Recognition
+
+- [MMAction2](https://github.com/open-mmlab/mmaction2) - OpenMMLab toolbox for video understanding supporting 20+ model architectures including SlowFast, TimeSformer, and VideoMAE.
+- [PySlowFast](https://github.com/facebookresearch/SlowFast) - Facebook Research library for video understanding with SlowFast, X3D, MViT, and AVA models.
+- [Video-Swin-Transformer](https://github.com/SwinTransformer/Video-Swin-Transformer) - Pure-transformer backbone for video recognition achieving SOTA on Kinetics-400, Kinetics-600, and SSv2.
+- [TimeSformer](https://github.com/facebookresearch/TimeSformer) - Facebook Research divided space-time attention for video classification from ICML 2021.
+- [VideoMAE](https://github.com/MCG-NJU/VideoMAE) - Self-supervised video pretraining with masked autoencoders achieving SOTA on multiple benchmarks.
+- [InternVideo2](https://github.com/OpenGVLab/InternVideo2) - Foundation model for video understanding at scale supporting action recognition, retrieval, and captioning.
+
+### Skeleton Action Recognition
+
+- [CTR-GCN](https://github.com/Uason-Chen/CTR-GCN) - Channel-wise topology refinement graph convolution for skeleton-based action recognition from ICCV 2021.
+- [ST-GCN](https://github.com/yysijie/st-gcn) - Seminal spatial-temporal graph convolution network that established the GCN approach for skeleton-based HAR.
+- [2s-AGCN](https://github.com/lshiwjx/2s-AGCN) - Two-stream adaptive graph convolutional network for skeleton-based action recognition from CVPR 2019.
+- [HD-GCN](https://github.com/Jho-Yonsei/HD-GCN) - Hierarchically decomposed graph convolutional network for skeleton action recognition from AAAI 2024.
+- [MotionBERT](https://github.com/Walter0807/MotionBERT) - Unified pretraining for human motion analysis covering 3D pose estimation and action recognition.
+- [InfoGCN](https://github.com/stnoah1/infogcn) - Information-bottleneck graph convolutional network for skeleton action recognition from CVPR 2022.
+
+### Wearable Sensor HAR
+
+- [tsai](https://github.com/timeseriesAI/tsai) - Deep learning library for time series and sequences built on fastai and PyTorch, widely used for sensor HAR.
+- [aeon](https://github.com/aeon-toolkit/aeon) - Unified Python toolkit for time series including classification, clustering, and anomaly detection.
+- [NNCLR-HAR](https://github.com/mariusbock/nnclr-har) - Self-supervised contrastive learning framework for wearable sensor HAR from IMWUT 2022.
+- [DeepConvLSTM](https://github.com/sussexwearlab/DeepConvLSTM) - Reference implementation of the convolutional LSTM architecture for wearable activity recognition.
+- [Hang-Time HAR](https://github.com/ahoelzemann/hangtime_har) - Basketball activity recognition from a single wrist-worn inertial sensor using deep learning.
+
+### Motion Generation and Estimation
+
+- [MDM](https://github.com/GuyTevet/motion-diffusion-model) - Human motion diffusion model for text-to-motion generation achieving SOTA on HumanML3D.
+- [MLD](https://github.com/ChenFengYe/motion-latent-diffusion) - Motion latent diffusion model for efficient text-driven human motion generation from CVPR 2023.
+- [T2M-GPT](https://github.com/Mael-zys/T2M-GPT) - Generating human motion from textual descriptions with discrete representations.
+- [MotionGPT](https://github.com/OpenMotionLab/MotionGPT) - Unified motion-language generation model treating motion as a foreign language.
+- [SMPL-X](https://github.com/vchoutas/smplx) - Expressive body model capturing body, face, and hand poses, the standard for modern motion datasets.
+
+## Pretrained Models
+
+- [VideoMAE V2](https://github.com/OpenGVLab/VideoMAEv2) - Billion-parameter video foundation model pretrained on millions of clips, finetunable for action recognition.
+- [InternVideo2 Model Zoo](https://huggingface.co/OpenGVLab/InternVideo2-Stage2_1B-224p-f4) - 6B-parameter video-language model checkpoints on Hugging Face for action recognition and retrieval.
+- [UniFormerV2](https://github.com/OpenGVLab/UniFormerV2) - Efficient video transformer with multi-scale tokens achieving 90.0% top-1 on Kinetics-400.
+- [MVD](https://github.com/ruiwang2021/mvd) - Masked video distillation pretrained model competitive with VideoMAE on downstream action recognition.
+- [MotionBERT Checkpoints](https://huggingface.co/walterzhu/MotionBERT) - Pretrained motion encoder transferable to 3D pose estimation, action recognition, and mesh recovery.
+
+## Tutorials and Courses
+
+- [Dive into Deep Learning - Action Recognition](https://d2l.ai/) - Interactive textbook chapter on video understanding and action recognition with PyTorch code.
+- [MMAction2 Tutorials](https://mmaction2.readthedocs.io/en/latest/get_started/overview.html) - Step-by-step guide to training action recognition models on custom datasets.
+- [Sensor HAR Tutorial by Marius Bock](https://github.com/mariusbock/dl-for-har) - Comprehensive deep learning tutorial for inertial sensor HAR with PyTorch.
+- [Stanford CS231N - Video Understanding](https://cs231n.stanford.edu/) - Lecture materials covering temporal modeling, two-stream networks, and 3D convolutions for action recognition.
+- [Coursera - Motion Planning](https://www.coursera.org/learn/robotics-motion-planning) - University of Pennsylvania course covering motion representations relevant to HAR.
+- [Motion Diffusion Tutorial](https://colab.research.google.com/drive/1MvBaAhOrEk8MP_jwNdQKLnvMxXPOG6zU) - Colab notebook for training text-conditioned human motion diffusion models on HumanML3D.
+
+## Key Papers
+
+### Foundational
+
+- [Two-Stream Convolutional Networks](https://arxiv.org/abs/1406.2199) - Simonyan and Zisserman, NeurIPS 2014, establishing the spatial-temporal two-stream paradigm.
+- [C3D: Learning Spatiotemporal Features](https://arxiv.org/abs/1412.0767) - Tran et al., ICCV 2015, pioneering 3D convolutions for video feature learning.
+- [I3D: Quo Vadis Action Recognition](https://arxiv.org/abs/1705.07750) - Carreira and Zisserman, CVPR 2017, inflating 2D ImageNet architectures to 3D video.
+- [ST-GCN: Spatial Temporal Graph Convolutional Networks](https://arxiv.org/abs/1801.07455) - Yan et al., AAAI 2018, defining the GCN approach for skeleton action recognition.
+- [SlowFast Networks](https://arxiv.org/abs/1812.03982) - Feichtenhofer et al., ICCV 2019, dual-pathway architecture for video recognition.
+
+### Transformer Era (2020 onwards)
+
+- [ViViT: A Video Vision Transformer](https://arxiv.org/abs/2103.15691) - Arnab et al., ICCV 2021, pure-transformer models for video classification.
+- [TimeSformer](https://arxiv.org/abs/2102.05095) - Bertasius et al., ICML 2021, divided space-time attention for scalable video transformers.
+- [VideoMAE](https://arxiv.org/abs/2203.12602) - Tong et al., NeurIPS 2022, masked autoencoder pretraining achieving SOTA with minimal labeled data.
+- [InternVideo2](https://arxiv.org/abs/2403.15377) - Wang et al., ECCV 2024, scaling video foundation models to 6B parameters across 60+ benchmarks.
+
+### Wearable and Sensor HAR
+
+- [DeepConvLSTM](https://arxiv.org/abs/1611.06759) - Ordonez and Roggen, Sensors 2016, establishing deep learning for wearable activity recognition.
+- [Attend and Discriminate](https://arxiv.org/abs/2007.07426) - Abedin et al., IMWUT 2021, attention mechanisms for multi-sensor HAR.
+- [Self-supervised HAR](https://arxiv.org/abs/2011.11542) - Tang et al., IJCAI 2021, contrastive learning for sensor-based activity recognition.
+
+### Motion Generation
+
+- [MDM: Human Motion Diffusion Model](https://arxiv.org/abs/2209.14916) - Tevet et al., ICLR 2023, diffusion-based text-to-motion generation.
+- [MotionGPT](https://arxiv.org/abs/2306.14795) - Jiang et al., NeurIPS 2023, unifying motion and language through LLM architectures.
+- [Motion-X](https://arxiv.org/abs/2307.00818) - Lin et al., NeurIPS 2023, first large-scale whole-body motion dataset with expressive annotations.
+
+### Surveys
+
+- [Deep Learning for HAR: A Survey](https://dl.acm.org/doi/10.1145/3472290) - Li et al., ACM Computing Surveys 2022, comprehensive review of deep learning approaches for HAR.
+- [Skeleton-based Action Recognition Survey](https://arxiv.org/abs/2012.12231) - Liu et al., IEEE TPAMI 2022, in-depth review of GCN and transformer methods for skeleton HAR.
+- [Multimodal HAR with Emphasis on Classification](https://www.sciencedirect.com/science/article/pii/S0950705124000029) - Yadav et al., Knowledge-Based Systems 2024, latest survey covering fusion strategies.
+
+## Competitions and Challenges
+
+- [Ego-Exo4D Challenge 2025](https://eval.ai/web/challenges/challenge-page/2249/overview) - CVPR 2025 multi-track benchmark covering ego-pose, action recognition, and language understanding.
+- [ActivityNet Challenge](http://activity-net.org/challenges/2024/) - Annual challenge for temporal action detection, proposals, and dense captioning.
+- [EPIC-Kitchens Challenge](https://epic-kitchens.github.io/2024) - Egocentric action recognition, detection, and anticipation competition.
+- [SHL Recognition Challenge](http://www.shl-dataset.org/activity-recognition-challenge/) - Annual challenge for transportation mode recognition from smartphone sensors.
+- [Babel Challenge](https://teach.is.tue.mpg.de/) - Motion-language understanding and temporal action segmentation on mocap data.
+- [UAV-Human Challenge](https://github.com/SUTDCV/UAV-Human) - Human behavior understanding from UAV perspectives with multi-modal data.
+
+## Tools and Utilities
+
+- [Papers with Code - HAR Leaderboards](https://paperswithcode.com/task/activity-recognition) - Live SOTA tracking across all major HAR benchmarks.
+- [MMAction2 Model Zoo](https://mmaction2.readthedocs.io/en/latest/model_zoo/modelzoo.html) - Pretrained checkpoints and configs for 100+ action recognition models.
+- [Decord](https://github.com/dmlc/decord) - Efficient GPU-accelerated video reader for deep learning training pipelines.
+- [vid2player](https://github.com/jhgan00/vid2player) - Character animation from video input, useful for activity recognition visualization.
+- [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) - Real-time multi-person keypoint detection for skeleton extraction from video.
+- [MediaPipe](https://developers.google.com/mediapipe) - Google's on-device ML framework for pose estimation, hand tracking, and gesture recognition.
+- [YOLO-Pose](https://github.com/ultralytics/ultralytics) - Ultralytics YOLOv8 Pose for real-time multi-person skeleton estimation.
+
+## Related Awesome Lists
+
+- [Awesome Action Recognition](https://github.com/jinwchoi/awesome-action-recognition) - Action recognition papers and datasets.
+- [Awesome Skeleton-based Action Recognition](https://github.com/firework8/Awesome-Skeleton-based-Action-Recognition) - GCN and transformer methods for skeleton HAR.
+- [Awesome Self-Supervised Learning](https://github.com/jason718/awesome-self-supervised-learning) - Self-supervised learning methods applicable to video and sensor modalities.
+- [Awesome Video Understanding](https://github.com/HuaizhengZhang/Awesome-System-for-Machine-Learning) - Video understanding systems and architectures.
+- [Awesome IMU Sensing](https://github.com/rh20624/Awesome-IMU-Sensing) - IMU-based sensing for activity recognition and navigation.
+- [Awesome Pose Estimation](https://github.com/cbsudux/awesome-human-pose-estimation) - Human pose estimation methods and benchmarks.
+
 ## Footnotes
 
-See also: [Multi-dimensional taxonomy](docs/taxonomy.md) | [Surveys](docs/surveys.md) | [Benchmarks](docs/benchmarking.md) | [Catalog builder](tools/) | [Roadmap](docs/roadmap.md) | [Contributing](CONTRIBUTING.md)
+See also: [Multi-dimensional taxonomy](docs/taxonomy.md) | [Surveys](docs/surveys.md) | [Benchmarks](docs/benchmarking.md) | [Catalog builder](tools/) | [Roadmap](docs/roadmap.md) | [How to contribute](CONTRIBUTING.md)
 
 ### Citation
 
