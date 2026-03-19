@@ -3,7 +3,7 @@ site_url: "https://leo-cyberautonomy.github.io/awesome-human-activity-recognitio
 repo_url: "https://github.com/Leo-Cyberautonomy/awesome-human-activity-recognition"
 repo_name: "Leo-Cyberautonomy/awesome-human-activity-recognition"
 
-docs_dir: "."
+docs_dir: "build-docs"
 site_dir: "site"
 
 theme:
@@ -24,7 +24,7 @@ plugins:
   - search
 
 nav:
-  - Home: docs/index.md
+  - Home: index.md
   - Datasets:
       - Vision:
           - Kinetics-700: datasets/vision/kinetics-700.md
@@ -85,11 +85,11 @@ nav:
           - InterX: datasets/emerging/interx.md
           - WiMANS: datasets/emerging/wimans.md
   - Resources:
-      - Taxonomy: docs/taxonomy.md
-      - Surveys: docs/surveys.md
-      - Benchmarking: docs/benchmarking.md
-  - Contributing: CONTRIBUTING.md
-  - Roadmap: docs/roadmap.md
+      - Taxonomy: resources/taxonomy.md
+      - Surveys: resources/surveys.md
+      - Benchmarking: resources/benchmarking.md
+  - Contributing: contributing.md
+  - Roadmap: resources/roadmap.md
 
 markdown_extensions:
   - tables

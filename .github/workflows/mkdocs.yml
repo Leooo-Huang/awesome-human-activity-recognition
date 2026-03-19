@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -23,7 +24,40 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install -r requirements-docs.txt
+        run: pip install mkdocs-material
+
+      - name: Prepare docs directory
+        run: |
+          mkdir -p build-docs/datasets/vision
+          mkdir -p build-docs/datasets/skeleton
+          mkdir -p build-docs/datasets/wearable
+          mkdir -p build-docs/datasets/multimodal
+          mkdir -p build-docs/datasets/emerging
+          mkdir -p build-docs/resources
+          mkdir -p build-docs/assets
+
+          # Copy homepage
+          cp docs/index.md build-docs/index.md
+
+          # Copy all dataset cards
+          cp datasets/vision/*.md build-docs/datasets/vision/
+          cp datasets/skeleton/*.md build-docs/datasets/skeleton/
+          cp datasets/wearable/*.md build-docs/datasets/wearable/
+          cp datasets/multimodal/*.md build-docs/datasets/multimodal/
+          cp datasets/emerging/*.md build-docs/datasets/emerging/
+
+          # Copy resource docs
+          cp docs/taxonomy.md build-docs/resources/taxonomy.md
+          cp docs/surveys.md build-docs/resources/surveys.md
+          cp docs/benchmarking.md build-docs/resources/benchmarking.md
+          cp docs/roadmap.md build-docs/resources/roadmap.md
+
+          # Copy contributing and README
+          cp CONTRIBUTING.md build-docs/contributing.md
+          cp README.md build-docs/readme-source.md
+
+          # Copy assets
+          cp -r assets/* build-docs/assets/ 2>/dev/null || true
 
       - name: Deploy to GitHub Pages
-        run: mkdocs gh-deploy --force
+        run: mkdocs gh-deploy --force --config-file mkdocs.yml
