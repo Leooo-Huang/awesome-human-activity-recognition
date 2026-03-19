@@ -14,6 +14,16 @@
 [![SOTA Updated](https://img.shields.io/github/last-commit/Leo-Cyberautonomy/awesome-human-activity-recognition/main?path=data%2Fsota-snapshot.json&label=SOTA%20Snapshot)](data/sota-snapshot.json)
 [![Website](https://img.shields.io/badge/Website-GitHub_Pages-blue.svg)](https://leo-cyberautonomy.github.io/awesome-human-activity-recognition/)
 
+<p align="center">
+  <a href="https://leo-cyberautonomy.github.io/awesome-human-activity-recognition/">
+    <img src="https://img.shields.io/badge/%F0%9F%94%8D_Browse_the_Searchable_Website-%E2%86%92-blue?style=for-the-badge&labelColor=0d1117" alt="Browse Website">
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/Leo-Cyberautonomy/awesome-human-activity-recognition/stargazers">
+    <img src="https://img.shields.io/badge/%E2%AD%90_Star_This_Repo_if_Useful-%E2%86%92-yellow?style=for-the-badge&labelColor=0d1117" alt="Star This Repo">
+  </a>
+</p>
+
 **[中文](i18n/README.zh.md)** | [Deutsch](i18n/README.de.md) | [Español](i18n/README.es.md) | [Français](i18n/README.fr.md) | [日本語](i18n/README.ja.md) | [한국어](i18n/README.ko.md) | [Português](i18n/README.pt.md) | [Русский](i18n/README.ru.md)
 
 ## Contents
