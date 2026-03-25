@@ -6,7 +6,7 @@
   </a>
 </p>
 
-> Un guide collaboratif et organisé sur la **Reconnaissance d'Activités Humaines** — 53 jeux de données, frameworks clés, modèles pré-entraînés, tutoriels et outils de benchmark couvrant la vision, les capteurs portables, le squelette et les modalités multimodales.
+> Toujours à jour, la ressource HAR la plus complète — continuellement analysée et mise à jour automatiquement depuis Papers with Code. 53 jeux de données intégrés sur toutes les modalités.
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Leooo-Huang/awesome-human-activity-recognition/pulls)

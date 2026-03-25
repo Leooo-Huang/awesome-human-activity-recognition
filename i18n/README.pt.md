@@ -6,7 +6,7 @@
   </a>
 </p>
 
-> Um guia curado e orientado por pesquisadores para **Reconhecimento de Atividades Humanas** — 53 conjuntos de dados, frameworks essenciais, modelos pré-treinados, tutoriais e ferramentas de benchmark nas modalidades de visão, sensores vestíveis, esqueleto e multimodal.
+> Sempre atualizado, o recurso HAR mais abrangente — continuamente verificado e atualizado automaticamente a partir do Papers with Code. 53 conjuntos de dados integrados em todas as modalidades.
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Leooo-Huang/awesome-human-activity-recognition/pulls)

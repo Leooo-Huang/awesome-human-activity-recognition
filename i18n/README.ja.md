@@ -6,7 +6,7 @@
   </a>
 </p>
 
-> 研究者主導で厳選された**人間行動認識（HAR）**ガイド — 53 データセット、主要フレームワーク、事前学習モデル、チュートリアル、ベンチマークツールを、ビジョン・ウェアラブル・骨格・マルチモーダルの各モダリティにわたり網羅。
+> 常に最新、最も包括的な HAR リソース — Papers with Code から継続的にスキャン・自動更新。全モダリティにわたる 53 データセットを統合。
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Leooo-Huang/awesome-human-activity-recognition/pulls)

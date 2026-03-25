@@ -6,7 +6,7 @@
   </a>
 </p>
 
-> Ein kuratierter, forschungsorientierter Leitfaden zur **Erkennung menschlicher Aktivitäten** — 53 Datensätze, wichtige Frameworks, vortrainierte Modelle, Tutorials und Benchmark-Tools für die Modalitäten Vision, Wearable, Skelett und Multimodal.
+> Stets aktuell, umfassendste HAR-Ressource — kontinuierlich gescannt und automatisch aktualisiert von Papers with Code. 53 Datensätze über alle Modalitäten integriert.
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Leooo-Huang/awesome-human-activity-recognition/pulls)

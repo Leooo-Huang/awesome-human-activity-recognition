@@ -6,7 +6,7 @@
   </a>
 </p>
 
-> 一份由研究者驱动的 **人体活动识别** 精选指南——涵盖 53 个数据集、关键框架、预训练模型、教程和基准工具，覆盖视觉、可穿戴、骨架和多模态等方向。
+> 持续扫描、实时更新——GitHub 上最全的 HAR 资源库，自动从 Papers with Code 同步 SOTA 分数，已整合全模态 53 个数据集。
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Leooo-Huang/awesome-human-activity-recognition/pulls)

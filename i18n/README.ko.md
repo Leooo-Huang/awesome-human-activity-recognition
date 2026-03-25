@@ -6,7 +6,7 @@
   </a>
 </p>
 
-> 연구자 중심으로 엄선한 **인간 활동 인식(Human Activity Recognition)** 가이드 — 비전, 웨어러블, 스켈레톤, 멀티모달 분야를 아우르는 53개 데이터셋, 주요 프레임워크, 사전학습 모델, 튜토리얼, 벤치마크 도구를 수록하였습니다.
+> 항상 최신 상태를 유지하는 가장 포괄적인 HAR 리소스 — Papers with Code에서 지속적으로 스캔 및 자동 업데이트. 전 모달리티에 걸쳐 53개 데이터셋 통합.
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Leooo-Huang/awesome-human-activity-recognition/pulls)

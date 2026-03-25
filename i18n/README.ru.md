@@ -6,7 +6,7 @@
   </a>
 </p>
 
-> Курируемое исследовательское руководство по **распознаванию человеческой активности** — 53 набора данных, ключевые фреймворки, предобученные модели, учебные материалы и инструменты бенчмаркинга для модальностей компьютерного зрения, носимых датчиков, скелетных данных и мультимодальных подходов.
+> Всегда актуальный, наиболее полный ресурс по HAR — непрерывно сканируется и автоматически обновляется из Papers with Code. 53 набора данных охватывают все модальности.
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Leooo-Huang/awesome-human-activity-recognition/pulls)
