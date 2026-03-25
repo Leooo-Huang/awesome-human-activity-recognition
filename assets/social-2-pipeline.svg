@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <linearGradient id="acc2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
+    </linearGradient>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#30363d"/>
+    </marker>
+    <marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#06b6d4"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg2)"/>
+  <rect x="0" y="0" width="1200" height="3" fill="url(#acc2)"/>
+
+  <!-- Title -->
+  <text x="600" y="55" font-family="Segoe UI, sans-serif" font-size="36" font-weight="800" fill="white" text-anchor="middle">How It Stays Up-to-Date</text>
+  <text x="600" y="85" font-family="Segoe UI, sans-serif" font-size="16" fill="#8b949e" text-anchor="middle">Fully automated pipeline - zero manual maintenance</text>
+
+  <!-- Central cycle diagram -->
+  <!-- Big circle path (conceptual) -->
+
+  <!-- Node 1: Papers with Code -->
+  <rect x="80" y="160" width="280" height="100" rx="14" fill="#1c2333" stroke="#06b6d4" stroke-width="2"/>
+  <text x="220" y="200" font-family="Segoe UI, sans-serif" font-size="24" fill="white" text-anchor="middle" font-weight="700">Papers with Code</text>
+  <text x="220" y="225" font-family="Segoe UI, sans-serif" font-size="14" fill="#8b949e" text-anchor="middle">Live SOTA leaderboards</text>
+  <text x="220" y="245" font-family="Segoe UI, sans-serif" font-size="13" fill="#06b6d4" text-anchor="middle">4 task endpoints tracked</text>
+
+  <!-- Arrow 1→2 -->
+  <path d="M365 210 L440 210" stroke="#30363d" stroke-width="3" marker-end="url(#ar)"/>
+  <text x="402" y="200" font-family="Segoe UI, sans-serif" font-size="11" fill="#484f58" text-anchor="middle">fetch</text>
+
+  <!-- Node 2: Python Script -->
+  <rect x="450" y="160" width="280" height="100" rx="14" fill="#1c2333" stroke="#22c55e" stroke-width="2"/>
+  <text x="590" y="195" font-family="Segoe UI, sans-serif" font-size="22" fill="white" text-anchor="middle" font-weight="700">sota_updater.py</text>
+  <text x="590" y="220" font-family="Segoe UI, sans-serif" font-size="14" fill="#8b949e" text-anchor="middle">Parse rankings, compare, diff</text>
+  <text x="590" y="245" font-family="Segoe UI, sans-serif" font-size="13" fill="#22c55e" text-anchor="middle">Only commits if data changed</text>
+
+  <!-- Arrow 2→3 -->
+  <path d="M735 210 L810 210" stroke="#30363d" stroke-width="3" marker-end="url(#ar)"/>
+  <text x="772" y="200" font-family="Segoe UI, sans-serif" font-size="11" fill="#484f58" text-anchor="middle">write</text>
+
+  <!-- Node 3: JSON snapshot -->
+  <rect x="820" y="160" width="300" height="100" rx="14" fill="#1c2333" stroke="#f97316" stroke-width="2"/>
+  <text x="970" y="195" font-family="Segoe UI, sans-serif" font-size="22" fill="white" text-anchor="middle" font-weight="700">sota-snapshot.json</text>
+  <text x="970" y="220" font-family="Segoe UI, sans-serif" font-size="14" fill="#8b949e" text-anchor="middle">Structured results per task</text>
+  <text x="970" y="245" font-family="Segoe UI, sans-serif" font-size="13" fill="#f97316" text-anchor="middle">Timestamped, git-versioned</text>
+
+  <!-- Arrow 3→4 (down) -->
+  <path d="M970 265 L970 330" stroke="#30363d" stroke-width="3" marker-end="url(#ar)"/>
+  <text x="985" y="300" font-family="Segoe UI, sans-serif" font-size="11" fill="#484f58">push</text>
+
+  <!-- Node 4: GitHub Actions -->
+  <rect x="820" y="340" width="300" height="100" rx="14" fill="#1c2333" stroke="#a78bfa" stroke-width="2"/>
+  <text x="970" y="375" font-family="Segoe UI, sans-serif" font-size="22" fill="white" text-anchor="middle" font-weight="700">GitHub Actions</text>
+  <text x="970" y="400" font-family="Segoe UI, sans-serif" font-size="14" fill="#8b949e" text-anchor="middle">Runs every Wednesday 06:00 UTC</text>
+  <text x="970" y="425" font-family="Segoe UI, sans-serif" font-size="13" fill="#a78bfa" text-anchor="middle">5 workflows: lint, links, SOTA, build, stale</text>
+
+  <!-- Arrow 4→5 (left) -->
+  <path d="M815 390 L735 390" stroke="#30363d" stroke-width="3" marker-end="url(#ar)"/>
+  <text x="775" y="380" font-family="Segoe UI, sans-serif" font-size="11" fill="#484f58" text-anchor="middle">deploy</text>
+
+  <!-- Node 5: MkDocs Website -->
+  <rect x="450" y="340" width="280" height="100" rx="14" fill="#1c2333" stroke="#ec4899" stroke-width="2"/>
+  <text x="590" y="375" font-family="Segoe UI, sans-serif" font-size="22" fill="white" text-anchor="middle" font-weight="700">MkDocs Website</text>
+  <text x="590" y="400" font-family="Segoe UI, sans-serif" font-size="14" fill="#8b949e" text-anchor="middle">Searchable, dark theme, mobile-ready</text>
+  <text x="590" y="425" font-family="Segoe UI, sans-serif" font-size="13" fill="#ec4899" text-anchor="middle">Auto-deploys to GitHub Pages</text>
+
+  <!-- Arrow 5→6 (left) -->
+  <path d="M445 390 L365 390" stroke="#30363d" stroke-width="3" marker-end="url(#ar)"/>
+  <text x="405" y="380" font-family="Segoe UI, sans-serif" font-size="11" fill="#484f58" text-anchor="middle">validate</text>
+
+  <!-- Node 6: Link Checker -->
+  <rect x="80" y="340" width="280" height="100" rx="14" fill="#1c2333" stroke="#eab308" stroke-width="2"/>
+  <text x="220" y="375" font-family="Segoe UI, sans-serif" font-size="22" fill="white" text-anchor="middle" font-weight="700">Link Validator</text>
+  <text x="220" y="400" font-family="Segoe UI, sans-serif" font-size="14" fill="#8b949e" text-anchor="middle">Checks all 53 dataset URLs weekly</text>
+  <text x="220" y="425" font-family="Segoe UI, sans-serif" font-size="13" fill="#eab308" text-anchor="middle">Dead links flagged automatically</text>
+
+  <!-- Loop arrow back to top -->
+  <path d="M220 445 L220 490 Q220 510 240 510 L1060 510 Q1080 510 1080 490 L1080 160 Q1080 145 1065 145 L1125 145" stroke="#06b6d4" stroke-width="2" fill="none" stroke-dasharray="8 4" opacity="0.4"/>
+
+  <!-- Loop label -->
+  <rect x="440" y="500" width="300" height="36" rx="18" fill="#06b6d4" opacity="0.15"/>
+  <text x="590" y="524" font-family="Segoe UI, sans-serif" font-size="15" fill="#06b6d4" text-anchor="middle" font-weight="600">Repeats every week automatically</text>
+
+  <!-- Bottom stats -->
+  <g transform="translate(80, 570)">
+    <rect x="0" y="0" width="1040" height="60" rx="10" fill="#1c2333" stroke="#30363d" stroke-width="1"/>
+
+    <text x="130" y="25" font-family="Segoe UI, sans-serif" font-size="28" fill="#06b6d4" text-anchor="middle" font-weight="800">0</text>
+    <text x="130" y="45" font-family="Segoe UI, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle">Manual maintenance</text>
+
+    <line x1="260" y1="10" x2="260" y2="50" stroke="#30363d" stroke-width="1"/>
+
+    <text x="390" y="25" font-family="Segoe UI, sans-serif" font-size="28" fill="#22c55e" text-anchor="middle" font-weight="800">52x</text>
+    <text x="390" y="45" font-family="Segoe UI, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle">Updates per year</text>
+
+    <line x1="520" y1="10" x2="520" y2="50" stroke="#30363d" stroke-width="1"/>
+
+    <text x="650" y="25" font-family="Segoe UI, sans-serif" font-size="28" fill="#f97316" text-anchor="middle" font-weight="800">100%</text>
+    <text x="650" y="45" font-family="Segoe UI, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle">Links verified</text>
+
+    <line x1="780" y1="10" x2="780" y2="50" stroke="#30363d" stroke-width="1"/>
+
+    <text x="910" y="25" font-family="Segoe UI, sans-serif" font-size="28" fill="#a78bfa" text-anchor="middle" font-weight="800">CC BY 4.0</text>
+    <text x="910" y="45" font-family="Segoe UI, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle">Open license</text>
+  </g>
+</svg>

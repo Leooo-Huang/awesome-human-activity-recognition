@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="45%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+
+    <!-- Subtle radial glow behind icons -->
+    <radialGradient id="glow" cx="50%" cy="55%" r="40%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Top-edge highlight -->
+    <linearGradient id="topLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#06b6d4" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#a78bfa" stop-opacity="0.8"/>
+      <stop offset="80%" stop-color="#ec4899" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Dot pattern -->
+    <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="0.8" fill="#ffffff" opacity="0.04"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bg)"/>
+  <rect width="1200" height="400" fill="url(#dots)"/>
+  <rect width="1200" height="400" fill="url(#glow)"/>
+
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="1200" height="2" fill="url(#topLine)"/>
+
+  <!-- Decorative subtle grid lines -->
+  <line x1="0" y1="200" x2="1200" y2="200" stroke="#ffffff" stroke-opacity="0.02" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="400" stroke="#ffffff" stroke-opacity="0.02" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="600" y="115" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif" font-size="46" font-weight="700" letter-spacing="0.5">
+    Awesome Human Activity Recognition
+  </text>
+
+  <!-- Underline accent -->
+  <rect x="420" y="135" width="360" height="2" rx="1" fill="url(#topLine)" opacity="0.5"/>
+
+  <!-- Subtitle -->
+  <text x="600" y="170" text-anchor="middle" fill="#8b949e" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="400" letter-spacing="1.5">
+    53 Datasets  ·  23 Frameworks  ·  20+ Papers  ·  8 Languages
+  </text>
+
+  <!-- ======= ICONS ROW (y center ~280) ======= -->
+
+  <!-- 1. Vision / Camera-Eye — Cyan #06b6d4 -->
+  <g transform="translate(180, 255)" stroke="#06b6d4" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Eye outer shape -->
+    <path d="M-28,0 Q-14,-20 0,-20 Q14,-20 28,0 Q14,20 0,20 Q-14,20 -28,0 Z"/>
+    <!-- Iris -->
+    <circle cx="0" cy="0" r="9"/>
+    <!-- Pupil -->
+    <circle cx="0" cy="0" r="4" fill="#06b6d4" fill-opacity="0.3"/>
+    <!-- Lens flare -->
+    <circle cx="-3" cy="-3" r="2" fill="#06b6d4" fill-opacity="0.5"/>
+  </g>
+  <text x="180" y="310" text-anchor="middle" fill="#06b6d4" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="500" letter-spacing="1" opacity="0.8">VISION</text>
+
+  <!-- 2. Skeleton / Stick Figure — Green #22c55e -->
+  <g transform="translate(390, 255)" stroke="#22c55e" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Head -->
+    <circle cx="0" cy="-18" r="6"/>
+    <!-- Torso -->
+    <line x1="0" y1="-12" x2="0" y2="8"/>
+    <!-- Arms -->
+    <line x1="0" y1="-6" x2="-14" y2="-14"/>
+    <line x1="0" y1="-6" x2="14" y2="2"/>
+    <!-- Legs -->
+    <line x1="0" y1="8" x2="-12" y2="22"/>
+    <line x1="0" y1="8" x2="12" y2="22"/>
+    <!-- Joints -->
+    <circle cx="0" cy="-6" r="2" fill="#22c55e" fill-opacity="0.4"/>
+    <circle cx="-14" cy="-14" r="2" fill="#22c55e" fill-opacity="0.4"/>
+    <circle cx="14" cy="2" r="2" fill="#22c55e" fill-opacity="0.4"/>
+    <circle cx="-12" cy="22" r="2" fill="#22c55e" fill-opacity="0.4"/>
+    <circle cx="12" cy="22" r="2" fill="#22c55e" fill-opacity="0.4"/>
+  </g>
+  <text x="390" y="310" text-anchor="middle" fill="#22c55e" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="500" letter-spacing="1" opacity="0.8">SKELETON</text>
+
+  <!-- 3. Wearable / Watch — Orange #f97316 -->
+  <g transform="translate(600, 255)" stroke="#f97316" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Watch band top -->
+    <rect x="-6" y="-26" width="12" height="10" rx="2"/>
+    <!-- Watch face -->
+    <rect x="-14" y="-16" width="28" height="32" rx="6"/>
+    <!-- Watch band bottom -->
+    <rect x="-6" y="16" width="12" height="10" rx="2"/>
+    <!-- Screen content - activity wave -->
+    <polyline points="-7,-4 -3,-9 1,2 5,-6 9,-1" stroke-width="1.5" stroke="#f97316" fill="none"/>
+    <!-- Small dot for digital crown -->
+    <circle cx="14" cy="0" r="1.5" fill="#f97316" fill-opacity="0.5"/>
+  </g>
+  <text x="600" y="310" text-anchor="middle" fill="#f97316" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="500" letter-spacing="1" opacity="0.8">WEARABLE</text>
+
+  <!-- 4. Multimodal / Overlapping Circles — Purple #a78bfa -->
+  <g transform="translate(810, 255)" stroke="#a78bfa" fill="none" stroke-width="2">
+    <circle cx="-10" cy="-5" r="14" stroke-opacity="0.7"/>
+    <circle cx="10" cy="-5" r="14" stroke-opacity="0.7"/>
+    <circle cx="0" cy="10" r="14" stroke-opacity="0.7"/>
+    <!-- Center intersection glow -->
+    <circle cx="0" cy="1" r="4" fill="#a78bfa" fill-opacity="0.15" stroke="none"/>
+  </g>
+  <text x="810" y="310" text-anchor="middle" fill="#a78bfa" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="500" letter-spacing="1" opacity="0.8">MULTIMODAL</text>
+
+  <!-- 5. Emerging / Sparkle Star — Pink #ec4899 -->
+  <g transform="translate(1020, 255)" stroke="#ec4899" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- 4-point star -->
+    <path d="M0,-22 L3,-8 L16,-4 L3,0 L0,22 L-3,0 L-16,-4 L-3,-8 Z" fill="#ec4899" fill-opacity="0.08"/>
+    <path d="M0,-22 L3,-8 L16,-4 L3,0 L0,22 L-3,0 L-16,-4 L-3,-8 Z"/>
+    <!-- Small accent sparkles -->
+    <line x1="12" y1="-16" x2="14" y2="-18" stroke-width="1.5" opacity="0.6"/>
+    <line x1="14" y1="-16" x2="12" y2="-18" stroke-width="1.5" opacity="0.6"/>
+    <line x1="-14" y1="12" x2="-16" y2="14" stroke-width="1.5" opacity="0.6"/>
+    <line x1="-16" y1="12" x2="-14" y2="14" stroke-width="1.5" opacity="0.6"/>
+  </g>
+  <text x="1020" y="310" text-anchor="middle" fill="#ec4899" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="500" letter-spacing="1" opacity="0.8">EMERGING</text>
+
+  <!-- Connecting line between icons -->
+  <line x1="220" y1="255" x2="350" y2="255" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1" stroke-dasharray="4,6"/>
+  <line x1="430" y1="255" x2="560" y2="255" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1" stroke-dasharray="4,6"/>
+  <line x1="640" y1="255" x2="770" y2="255" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1" stroke-dasharray="4,6"/>
+  <line x1="850" y1="255" x2="980" y2="255" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1" stroke-dasharray="4,6"/>
+
+  <!-- Bottom subtle branding -->
+  <text x="600" y="375" text-anchor="middle" fill="#484f58" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="400" letter-spacing="2">
+    A CURATED LIST OF HAR RESOURCES
+  </text>
+</svg>

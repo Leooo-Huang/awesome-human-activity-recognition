@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="divider" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="20%" stop-color="#30363d"/>
+      <stop offset="80%" stop-color="#30363d"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <!-- Glow filters for each modality -->
+    <filter id="glowCyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#06b6d4" flood-opacity="0.3"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowGreen" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#22c55e" flood-opacity="0.3"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowOrange" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#f97316" flood-opacity="0.3"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowPurple" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#a78bfa" flood-opacity="0.3"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowPink" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#ec4899" flood-opacity="0.3"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bg)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.03">
+    <line x1="0" y1="0" x2="0" y2="675" stroke="white" stroke-width="1" transform="translate(120,0)"/>
+    <line x1="0" y1="0" x2="0" y2="675" stroke="white" stroke-width="1" transform="translate(240,0)"/>
+    <line x1="0" y1="0" x2="0" y2="675" stroke="white" stroke-width="1" transform="translate(360,0)"/>
+    <line x1="0" y1="0" x2="0" y2="675" stroke="white" stroke-width="1" transform="translate(480,0)"/>
+    <line x1="0" y1="0" x2="0" y2="675" stroke="white" stroke-width="1" transform="translate(600,0)"/>
+    <line x1="0" y1="0" x2="0" y2="675" stroke="white" stroke-width="1" transform="translate(720,0)"/>
+    <line x1="0" y1="0" x2="0" y2="675" stroke="white" stroke-width="1" transform="translate(840,0)"/>
+    <line x1="0" y1="0" x2="0" y2="675" stroke="white" stroke-width="1" transform="translate(960,0)"/>
+    <line x1="0" y1="0" x2="0" y2="675" stroke="white" stroke-width="1" transform="translate(1080,0)"/>
+    <line x1="0" y1="0" x2="1200" y2="0" stroke="white" stroke-width="1" transform="translate(0,120)"/>
+    <line x1="0" y1="0" x2="1200" y2="0" stroke="white" stroke-width="1" transform="translate(0,240)"/>
+    <line x1="0" y1="0" x2="1200" y2="0" stroke="white" stroke-width="1" transform="translate(0,360)"/>
+    <line x1="0" y1="0" x2="1200" y2="0" stroke="white" stroke-width="1" transform="translate(0,480)"/>
+    <line x1="0" y1="0" x2="1200" y2="0" stroke="white" stroke-width="1" transform="translate(0,555)"/>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="120" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="42" fill="white" letter-spacing="0.5">Awesome Human Activity Recognition</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="165" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="400" font-size="20" fill="#8b949e">53 Datasets · 5 Modalities · Weekly Auto-Scan</text>
+
+  <!-- Divider line -->
+  <line x1="100" y1="195" x2="1100" y2="195" stroke="url(#divider)" stroke-width="1"/>
+
+  <!-- ===== MODALITY ICONS ROW ===== -->
+  <!-- Evenly spaced at x = 140, 380, 600, 820, 1060 => spacing ~220px -->
+
+  <!-- 1. Vision (14) - Cyan - Eye icon -->
+  <g transform="translate(140, 330)" filter="url(#glowCyan)">
+    <!-- Eye shape -->
+    <ellipse cx="0" cy="0" rx="38" ry="24" fill="none" stroke="#06b6d4" stroke-width="2.5"/>
+    <!-- Iris -->
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#06b6d4" stroke-width="2.5"/>
+    <!-- Pupil -->
+    <circle cx="0" cy="0" r="5" fill="#06b6d4"/>
+  </g>
+  <!-- Count badge -->
+  <rect x="113" y="260" width="54" height="26" rx="13" fill="#06b6d4" opacity="0.15"/>
+  <text x="140" y="278" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="14" fill="#06b6d4">14</text>
+  <!-- Label -->
+  <text x="140" y="385" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="600" font-size="18" fill="#06b6d4">Vision</text>
+
+  <!-- 2. Skeleton (7) - Green - Stick figure -->
+  <g transform="translate(370, 330)" filter="url(#glowGreen)">
+    <!-- Head -->
+    <circle cx="0" cy="-28" r="8" fill="none" stroke="#22c55e" stroke-width="2.5"/>
+    <!-- Body -->
+    <line x1="0" y1="-20" x2="0" y2="8" stroke="#22c55e" stroke-width="2.5"/>
+    <!-- Arms -->
+    <line x1="-20" y1="-10" x2="20" y2="-10" stroke="#22c55e" stroke-width="2.5"/>
+    <!-- Left leg -->
+    <line x1="0" y1="8" x2="-16" y2="28" stroke="#22c55e" stroke-width="2.5"/>
+    <!-- Right leg -->
+    <line x1="0" y1="8" x2="16" y2="28" stroke="#22c55e" stroke-width="2.5"/>
+    <!-- Joints -->
+    <circle cx="-20" cy="-10" r="3" fill="#22c55e"/>
+    <circle cx="20" cy="-10" r="3" fill="#22c55e"/>
+    <circle cx="-16" cy="28" r="3" fill="#22c55e"/>
+    <circle cx="16" cy="28" r="3" fill="#22c55e"/>
+  </g>
+  <rect x="343" y="260" width="54" height="26" rx="13" fill="#22c55e" opacity="0.15"/>
+  <text x="370" y="278" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="14" fill="#22c55e">7</text>
+  <text x="370" y="385" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="600" font-size="18" fill="#22c55e">Skeleton</text>
+
+  <!-- 3. Wearable (13) - Orange - Watch shape -->
+  <g transform="translate(600, 330)" filter="url(#glowOrange)">
+    <!-- Watch band top -->
+    <rect x="-10" y="-36" width="20" height="14" rx="3" fill="none" stroke="#f97316" stroke-width="2.5"/>
+    <!-- Watch face -->
+    <rect x="-16" y="-22" width="32" height="32" rx="6" fill="none" stroke="#f97316" stroke-width="2.5"/>
+    <!-- Watch band bottom -->
+    <rect x="-10" y="10" width="20" height="14" rx="3" fill="none" stroke="#f97316" stroke-width="2.5"/>
+    <!-- Watch hands -->
+    <line x1="0" y1="-6" x2="0" y2="-14" stroke="#f97316" stroke-width="2" stroke-linecap="round"/>
+    <line x1="0" y1="-6" x2="8" y2="-6" stroke="#f97316" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="0" cy="-6" r="2" fill="#f97316"/>
+    <!-- Crown button -->
+    <rect x="16" y="-10" width="5" height="8" rx="1.5" fill="#f97316"/>
+  </g>
+  <rect x="573" y="260" width="54" height="26" rx="13" fill="#f97316" opacity="0.15"/>
+  <text x="600" y="278" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="14" fill="#f97316">13</text>
+  <text x="600" y="385" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="600" font-size="18" fill="#f97316">Wearable</text>
+
+  <!-- 4. Egocentric (7) - Purple - Glasses/camera shape -->
+  <g transform="translate(830, 330)" filter="url(#glowPurple)">
+    <!-- Left lens -->
+    <rect x="-34" y="-12" width="26" height="20" rx="5" fill="none" stroke="#a78bfa" stroke-width="2.5"/>
+    <!-- Right lens -->
+    <rect x="8" y="-12" width="26" height="20" rx="5" fill="none" stroke="#a78bfa" stroke-width="2.5"/>
+    <!-- Bridge -->
+    <path d="M -8,-4 Q 0,-10 8,-4" fill="none" stroke="#a78bfa" stroke-width="2.5"/>
+    <!-- Temple arms -->
+    <line x1="-34" y1="-4" x2="-42" y2="-10" stroke="#a78bfa" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="34" y1="-4" x2="42" y2="-10" stroke="#a78bfa" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Camera dot on right lens -->
+    <circle cx="21" cy="-2" r="5" fill="none" stroke="#a78bfa" stroke-width="2"/>
+    <circle cx="21" cy="-2" r="2" fill="#a78bfa"/>
+  </g>
+  <rect x="803" y="260" width="54" height="26" rx="13" fill="#a78bfa" opacity="0.15"/>
+  <text x="830" y="278" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="14" fill="#a78bfa">7</text>
+  <text x="830" y="385" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="600" font-size="18" fill="#a78bfa">Egocentric</text>
+
+  <!-- 5. Emerging (12) - Pink - Sparkle/star shape -->
+  <g transform="translate(1060, 330)" filter="url(#glowPink)">
+    <!-- 4-point sparkle star -->
+    <path d="M 0,-30 L 5,-8 L 28,0 L 5,8 L 0,30 L -5,8 L -28,0 L -5,-8 Z" fill="none" stroke="#ec4899" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- Small accent sparkles -->
+    <path d="M 18,-20 L 20,-14 L 26,-12 L 20,-10 L 18,-4 L 16,-10 L 10,-12 L 16,-14 Z" fill="#ec4899" opacity="0.6"/>
+    <path d="M -20,14 L -18,18 L -14,20 L -18,22 L -20,26 L -22,22 L -26,20 L -22,18 Z" fill="#ec4899" opacity="0.4"/>
+  </g>
+  <rect x="1033" y="260" width="54" height="26" rx="13" fill="#ec4899" opacity="0.15"/>
+  <text x="1060" y="278" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="14" fill="#ec4899">12</text>
+  <text x="1060" y="385" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="600" font-size="18" fill="#ec4899">Emerging</text>
+
+  <!-- ===== DIVIDER ===== -->
+  <line x1="100" y1="430" x2="1100" y2="430" stroke="url(#divider)" stroke-width="1"/>
+
+  <!-- ===== AUTO-UPDATE SECTION ===== -->
+  <g transform="translate(600, 500)">
+    <!-- Circular arrow loop icon -->
+    <g transform="translate(-140, 0)">
+      <!-- Circular arrow - arc -->
+      <path d="M -14,0 A 14,14 0 1,1 10,10" fill="none" stroke="#58a6ff" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- Arrow head -->
+      <polygon points="10,10 16,4 4,4" fill="#58a6ff"/>
+      <!-- Second arc for loop feel -->
+      <path d="M 14,0 A 14,14 0 0,1 -4,-12" fill="none" stroke="#58a6ff" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+    </g>
+    <!-- Text -->
+    <text x="0" y="6" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="400" font-size="18" fill="#8b949e">Auto-updated weekly from <tspan fill="#58a6ff">Papers with Code</tspan></text>
+  </g>
+
+  <!-- ===== BOTTOM DIVIDER ===== -->
+  <line x1="100" y1="555" x2="1100" y2="555" stroke="url(#divider)" stroke-width="1"/>
+
+  <!-- ===== FOOTER ===== -->
+  <!-- GitHub icon -->
+  <g transform="translate(440, 600)">
+    <path d="M12,2 C6.48,2 2,6.48 2,12 C2,16.42 4.87,20.17 8.84,21.5 C9.34,21.58 9.5,21.27 9.5,21 C9.5,20.77 9.5,20.14 9.5,19.31 C6.73,19.91 6.14,17.97 6.14,17.97 C5.68,16.81 5.03,16.5 5.03,16.5 C4.12,15.88 5.1,15.9 5.1,15.9 C6.1,15.97 6.63,16.93 6.63,16.93 C7.5,18.45 8.97,17.99 9.54,17.76 C9.63,17.11 9.89,16.67 10.17,16.42 C7.95,16.17 5.62,15.31 5.62,11.5 C5.62,10.39 6,9.5 6.65,8.79 C6.55,8.54 6.2,7.5 6.75,6.15 C6.75,6.15 7.59,5.88 9.5,7.17 C10.29,6.95 11.15,6.84 12,6.84 C12.85,6.84 13.71,6.95 14.5,7.17 C16.41,5.88 17.25,6.15 17.25,6.15 C17.8,7.5 17.45,8.54 17.35,8.79 C18,9.5 18.38,10.39 18.38,11.5 C18.38,15.32 16.04,16.16 13.81,16.41 C14.17,16.72 14.5,17.33 14.5,18.26 C14.5,19.6 14.5,20.68 14.5,21 C14.5,21.27 14.66,21.59 15.17,21.5 C19.14,20.16 22,16.42 22,12 C22,6.48 17.52,2 12,2 Z" fill="#8b949e" transform="scale(0.9) translate(-12,-12)"/>
+  </g>
+  <text x="600" y="605" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="400" font-size="15" fill="#8b949e">github.com/Leooo-Huang/awesome-human-activity-recognition</text>
+</svg>
