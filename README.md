@@ -1,7 +1,7 @@
 # Awesome Human Activity Recognition [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 <p align="center">
-  <a href="https://github.com/Leo-Cyberautonomy/awesome-human-activity-recognition">
+  <a href="https://github.com/Leooo-Huang/awesome-human-activity-recognition">
     <img src="assets/banner.svg" alt="Awesome Human Activity Recognition" width="600">
   </a>
 </p>
@@ -9,17 +9,17 @@
 > A curated, researcher-driven guide to **Human Activity Recognition** — 53 datasets, key frameworks, pretrained models, tutorials, and benchmark tools across vision, wearable, skeleton, and multimodal modalities.
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Leo-Cyberautonomy/awesome-human-activity-recognition/pulls)
-[![Last Commit](https://img.shields.io/github/last-commit/Leo-Cyberautonomy/awesome-human-activity-recognition?label=Last%20Updated)](https://github.com/Leo-Cyberautonomy/awesome-human-activity-recognition/commits/main)
-[![SOTA Updated](https://img.shields.io/github/last-commit/Leo-Cyberautonomy/awesome-human-activity-recognition/main?path=data%2Fsota-snapshot.json&label=SOTA%20Snapshot)](data/sota-snapshot.json)
-[![Website](https://img.shields.io/badge/Website-GitHub_Pages-blue.svg)](https://leo-cyberautonomy.github.io/awesome-human-activity-recognition/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Leooo-Huang/awesome-human-activity-recognition/pulls)
+[![Last Commit](https://img.shields.io/github/last-commit/Leooo-Huang/awesome-human-activity-recognition?label=Last%20Updated)](https://github.com/Leooo-Huang/awesome-human-activity-recognition/commits/main)
+[![SOTA Updated](https://img.shields.io/github/last-commit/Leooo-Huang/awesome-human-activity-recognition/main?path=data%2Fsota-snapshot.json&label=SOTA%20Snapshot)](data/sota-snapshot.json)
+[![Website](https://img.shields.io/badge/Website-GitHub_Pages-blue.svg)](https://leooo-huang.github.io/awesome-human-activity-recognition/)
 
 <p align="center">
-  <a href="https://leo-cyberautonomy.github.io/awesome-human-activity-recognition/">
+  <a href="https://leooo-huang.github.io/awesome-human-activity-recognition/">
     <img src="https://img.shields.io/badge/%F0%9F%94%8D_Browse_the_Searchable_Website-%E2%86%92-blue?style=for-the-badge&labelColor=0d1117" alt="Browse Website">
   </a>
   &nbsp;&nbsp;
-  <a href="https://github.com/Leo-Cyberautonomy/awesome-human-activity-recognition/stargazers">
+  <a href="https://github.com/Leooo-Huang/awesome-human-activity-recognition/stargazers">
     <img src="https://img.shields.io/badge/%E2%AD%90_Star_This_Repo_if_Useful-%E2%86%92-yellow?style=for-the-badge&labelColor=0d1117" alt="Star This Repo">
   </a>
 </p>
@@ -284,7 +284,7 @@ See also: [Multi-dimensional taxonomy](docs/taxonomy.md) | [Surveys](docs/survey
   title   = {Awesome Human Activity Recognition: A Curated List},
   author  = {Wenxuan Huang},
   year    = {2025},
-  url     = {https://github.com/Leo-Cyberautonomy/awesome-human-activity-recognition},
+  url     = {https://github.com/Leooo-Huang/awesome-human-activity-recognition},
   note    = {GitHub repository}
 }
 ```

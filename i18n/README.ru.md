@@ -1,7 +1,7 @@
 # Awesome Распознавание человеческой активности [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 <p align="center">
-  <a href="https://github.com/Leo-Cyberautonomy/awesome-human-activity-recognition">
+  <a href="https://github.com/Leooo-Huang/awesome-human-activity-recognition">
     <img src="../assets/banner.svg" alt="Awesome Human Activity Recognition" width="600">
   </a>
 </p>
@@ -9,10 +9,10 @@
 > Курируемое исследовательское руководство по **распознаванию человеческой активности** — 53 набора данных, ключевые фреймворки, предобученные модели, учебные материалы и инструменты бенчмаркинга для модальностей компьютерного зрения, носимых датчиков, скелетных данных и мультимодальных подходов.
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Leo-Cyberautonomy/awesome-human-activity-recognition/pulls)
-[![Last Commit](https://img.shields.io/github/last-commit/Leo-Cyberautonomy/awesome-human-activity-recognition?label=Last%20Updated)](https://github.com/Leo-Cyberautonomy/awesome-human-activity-recognition/commits/main)
-[![SOTA Updated](https://img.shields.io/github/last-commit/Leo-Cyberautonomy/awesome-human-activity-recognition/main?path=data%2Fsota-snapshot.json&label=SOTA%20Snapshot)](data/sota-snapshot.json)
-[![Website](https://img.shields.io/badge/Website-GitHub_Pages-blue.svg)](https://leo-cyberautonomy.github.io/awesome-human-activity-recognition/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Leooo-Huang/awesome-human-activity-recognition/pulls)
+[![Last Commit](https://img.shields.io/github/last-commit/Leooo-Huang/awesome-human-activity-recognition?label=Last%20Updated)](https://github.com/Leooo-Huang/awesome-human-activity-recognition/commits/main)
+[![SOTA Updated](https://img.shields.io/github/last-commit/Leooo-Huang/awesome-human-activity-recognition/main?path=data%2Fsota-snapshot.json&label=SOTA%20Snapshot)](data/sota-snapshot.json)
+[![Website](https://img.shields.io/badge/Website-GitHub_Pages-blue.svg)](https://leooo-huang.github.io/awesome-human-activity-recognition/)
 
 [中文](README.zh.md) | [English](../README.md) | [Deutsch](README.de.md) | [Español](README.es.md) | [Français](README.fr.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Português](README.pt.md) | **Русский**
 
@@ -274,7 +274,7 @@ graph LR
   title   = {Awesome Human Activity Recognition: A Curated List},
   author  = {Wenxuan Huang},
   year    = {2025},
-  url     = {https://github.com/Leo-Cyberautonomy/awesome-human-activity-recognition},
+  url     = {https://github.com/Leooo-Huang/awesome-human-activity-recognition},
   note    = {GitHub repository}
 }
 ```

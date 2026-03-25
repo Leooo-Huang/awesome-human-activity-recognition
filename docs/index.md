@@ -3,7 +3,7 @@
 > A curated, researcher-driven guide to **Human Activity Recognition** -- 53 datasets, key frameworks, pretrained models, tutorials, and benchmark tools across vision, wearable, skeleton, and multimodal modalities.
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Leo-Cyberautonomy/awesome-human-activity-recognition/pulls)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Leooo-Huang/awesome-human-activity-recognition/pulls)
 
 ## Quick Stats
 
@@ -59,7 +59,7 @@
   title   = {Awesome Human Activity Recognition: A Curated List},
   author  = {Wenxuan Huang},
   year    = {2025},
-  url     = {https://github.com/Leo-Cyberautonomy/awesome-human-activity-recognition},
+  url     = {https://github.com/Leooo-Huang/awesome-human-activity-recognition},
   note    = {GitHub repository}
 }
 ```

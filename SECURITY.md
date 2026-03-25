@@ -15,7 +15,7 @@ Out of scope:
 
 ## Reporting a Vulnerability
 
-1. Use [GitHub Security Advisories](https://github.com/Leo-Cyberautonomy/awesome-human-activity-recognition/security/advisories/new) to report vulnerabilities privately.
+1. Use [GitHub Security Advisories](https://github.com/Leooo-Huang/awesome-human-activity-recognition/security/advisories/new) to report vulnerabilities privately.
 2. Alternatively, email the maintainers at `wenxuan@cyberautonomy.dev` with a detailed description, reproduction steps, and potential impact.
 3. If you cannot use GitHub advisories, open a private issue or email.
 
