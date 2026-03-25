@@ -6,29 +6,12 @@
   </a>
 </p>
 
-> A curated, researcher-driven guide to **Human Activity Recognition** — 53 datasets, key frameworks, pretrained models, tutorials, and benchmark tools across vision, wearable, skeleton, and multimodal modalities.
-
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Leooo-Huang/awesome-human-activity-recognition/pulls)
-[![Last Commit](https://img.shields.io/github/last-commit/Leooo-Huang/awesome-human-activity-recognition?label=Last%20Updated)](https://github.com/Leooo-Huang/awesome-human-activity-recognition/commits/main)
-[![SOTA Updated](https://img.shields.io/github/last-commit/Leooo-Huang/awesome-human-activity-recognition/main?path=data%2Fsota-snapshot.json&label=SOTA%20Snapshot)](data/sota-snapshot.json)
-[![Website](https://img.shields.io/badge/Website-GitHub_Pages-blue.svg)](https://leooo-huang.github.io/awesome-human-activity-recognition/)
-
-<p align="center">
-  <a href="https://leooo-huang.github.io/awesome-human-activity-recognition/">
-    <img src="https://img.shields.io/badge/%F0%9F%94%8D_Browse_the_Searchable_Website-%E2%86%92-blue?style=for-the-badge&labelColor=0d1117" alt="Browse Website">
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/Leooo-Huang/awesome-human-activity-recognition/stargazers">
-    <img src="https://img.shields.io/badge/%E2%AD%90_Star_This_Repo_if_Useful-%E2%86%92-yellow?style=for-the-badge&labelColor=0d1117" alt="Star This Repo">
-  </a>
-</p>
+> Human Activity Recognition (HAR) is the field of recognizing human actions and activities from sensor data — including video, skeleton/mocap, wearable IMU, and multimodal egocentric inputs. This list covers datasets, frameworks, pretrained models, tutorials, papers, competitions, and tools for HAR research.
 
 **[中文](i18n/README.zh.md)** | [Deutsch](i18n/README.de.md) | [Español](i18n/README.es.md) | [Français](i18n/README.fr.md) | [日本語](i18n/README.ja.md) | [한국어](i18n/README.ko.md) | [Português](i18n/README.pt.md) | [Русский](i18n/README.ru.md)
 
 ## Contents
 
-- [Repository Architecture](#repository-architecture)
 - [Which Dataset Should I Use](#which-dataset-should-i-use)
 - [Datasets](#datasets)
 - [Frameworks and Libraries](#frameworks-and-libraries)
@@ -38,38 +21,6 @@
 - [Competitions and Challenges](#competitions-and-challenges)
 - [Tools and Utilities](#tools-and-utilities)
 - [Related Awesome Lists](#related-awesome-lists)
-
-## Repository Architecture
-
-```mermaid
-graph LR
-    subgraph Datasets["53 Datasets"]
-        V["Vision (14)"]
-        S["Skeleton (7)"]
-        W["Wearable (13)"]
-        M["Multimodal (7)"]
-        E["Emerging (12)"]
-    end
-
-    subgraph Ecosystem
-        F["Frameworks & Libraries"]
-        P["Pretrained Models"]
-        T["Tutorials & Courses"]
-    end
-
-    subgraph Automation
-        LC["Link Check\n(weekly)"]
-        SU["SOTA Update\n(weekly)"]
-        CB["Catalog Build\n(on push)"]
-    end
-
-    Datasets --> F
-    Datasets --> P
-    F --> T
-    SU -->|updates| Datasets
-    LC -->|validates| Datasets
-    CB -->|exports| JSON["catalog.json\ncatalog.csv"]
-```
 
 ## Which Dataset Should I Use
 
