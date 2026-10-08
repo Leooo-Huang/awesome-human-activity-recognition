@@ -82,9 +82,11 @@
 - [HARTH](https://archive.ics.uci.edu/dataset/779/harth) - Professional video-annotated free-living accelerometer HAR from 22 subjects in real-world conditions.
 - [CAPTURE-24](https://github.com/OxWearables/capture24) - Largest free-living wrist accelerometer dataset with 151 subjects and 3883 hours from Nature Scientific Data 2024.
 - [WEAR](https://github.com/mariusbock/wear) - Outdoor sports dataset with smartwatch IMU and egocentric video from 22 subjects across 18 activities, published at IMWUT 2024.
+- [Warehouse MoC+Sensor](https://github.com/xieyulai/warehouse-moc-sensor) - Warehouse/logistics HAR with paired real wrist-watch ACC and full-body MoCap (20 joints × POS/ACC/GYR) from 9 subjects and 1768 clips (ESWA 2026).
 
 ### Multimodal and Egocentric
 
+- [Warehouse MoC+Sensor](https://github.com/xieyulai/warehouse-moc-sensor) - Warehouse/logistics HAR with paired real wrist-watch ACC and full-body MoCap (20 joints × POS/ACC/GYR) from 9 subjects and 1768 clips (ESWA 2026).
 - [EPIC-Kitchens-100](https://epic-kitchens.github.io/2021) - Long-term egocentric kitchen actions with audio spanning 700 hours across 90 kitchens.
 - [Ego4D](https://ego4d-data.org/docs/data/) - Largest egocentric dataset with multi-task benchmarks spanning 3.3k hours across 74 scenes.
 - [Charades](https://allenai.org/plato/charades/) - Indoor multi-label action recognition with scripted descriptions spanning 9.8k videos across 157 labels.
